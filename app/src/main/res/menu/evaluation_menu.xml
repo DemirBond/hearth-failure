@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/change_font"
+        android:title="@string/change_font_menu_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/exit_evaluation"
+        android:title="@string/exit_evaluation" />
+
+    <item
+        android:id="@+id/reset_field"
+        android:title="@string/reset_field" />
+</menu>

@@ -1,0 +1,896 @@
+<resources>
+    <string name="app_name">Hearth Failure</string>
+    <string name="new_evaluation_title">New Evaluation</string>
+    <string name="new_evaluation_description">Create new evaluation for a patient</string>
+    <string name="saved_evaluation_title">Saved Evaluations</string>
+    <string name="saved_evaluation_desription">View and edit previously saved evaluations</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in_up">Sign In/Up</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="development">DEVELOPMENT</string>
+    <string name="version_caps">VERSION</string>
+    <string name="version">Version %1$s</string>
+    <string name="logic">Logic</string>
+    <string name="engineering">Engineering</string>
+    <string name="design">Design</string>
+    <string name="logic_dev_name">Demir Baykal</string>
+    <string name="engineering_dev_name">Gurkan Sokat</string>
+    <string name="designer_name">Alphonso Jordan</string>
+    <string name="compute_evaluation">Compute Evaluation</string>
+    <string name="heart_check">Heart Check</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="bio_required">Bio Required</string>
+    <string name="bio_alert_desc">Please complete the bio section before moving forward.</string>
+    <string name="go_to_bio">Go to Bio</string>
+    <string name="cancel">Cancel</string>
+    <string name="none">None</string>
+    <string name="cancel_evaluation_popup_title">Cancel Evaluation?</string>
+    <string name="cancel_evaluation_popup_description">Are you sure you want to cancel this evaluation?</string>
+    <string name="yes_im_sure">Yes, I\'m sure</string>
+    <string name="bio">Bio</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="physical_exam">Physical Exam</string>
+    <string name="cv_profile">Current/Past CV Profile</string>
+    <string name="cv_risk">Major CV Risk Factors</string>
+    <string name="laboratories">Laboratories</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="po_meds">PO Meds</string>
+    <string name="in_hospital_therapies">In Hospital/IV Therapies</string>
+    <string name="heart_specialist_management">Heart Specialist Management</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="sbp">SBP</string>
+    <string name="dbp">DBP</string>
+    <string name="name_hint">Enter Patient Name</string>
+    <string name="age_hint">Enter Patient age</string>
+    <string name="warning">Warning</string>
+    <string name="info">Info</string>
+    <string name="refer_to_heart_failure_spec">Refer to Heart Failure Specialist for management?</string>
+    <string name="ask_if_user_wants_to_saved_evaluation">Do you want to save this evaluation?</string>
+    <string name="yes">YES</string>
+    <string name="not_now">NOT NOW</string>
+    <string name="dyspnea">Dyspnea</string>
+    <string name="chest_pain">Chest Pain</string>
+    <string name="syncope_presyncope">Syncope/Presyncope</string>
+    <string name="heart_failure">Heart Failure</string>
+    <string name="coronary_heart_disease">Coronary Heart Disease</string>
+    <string name="atrial_fibrilation">Atrial Fibrillation</string>
+    <string name="thromboembolic_vka">Thromboembolic/VKA</string>
+    <string name="ventricular_tachyarrthymias">Ventricular Tachyarrthymias</string>
+    <string name="bradyarrthymia_syncope">Bradyarrthymia/Syncope</string>
+    <string name="valvular_heart_disease">Valvular Heart Disease</string>
+    <string name="valvular_heart_disease_thromboembolic">Valvular Heart Disease\n Thromboembolic Prevention\nand\nTherapy</string>
+    <string name="pulmonary_hypertension">Pulmonary Hypertension</string>
+    <string name="vascular_diseases">Vascular Diseases</string>
+    <string name="evaluation">Evaluation</string>
+    <string name="outpatient">Outpatient</string>
+    <string name="emergency_room">Emergency Room</string>
+    <string name="in_hospital">In Hospital</string>
+    <string name="day1">Day 1</string>
+    <string name="day2">Day 2</string>
+    <string name="day3">Day 3</string>
+    <string name="day4">Day 4</string>
+    <string name="day5">Day 5</string>
+    <string name="day6">Day 6</string>
+    <string name="please_select_one">Please Select One</string>
+    <string name="chronic_hf">Chronic HF with Known Etiology</string>
+    <string name="new_hf">New Onset/Suspected HF</string>
+    <string name="dyspnea_on_exertion">Dyspnea on Exertion, not at Rest</string>
+    <string name="strenuous_exertion">Strenuous Exertion</string>
+    <string name="more_than_daily_routine">More than Daily Routine</string>
+    <string name="daily_routine_minimal_activities">Daily Routine / Minimal Activities</string>
+    <string name="dyspnea_at_rest">Dyspnea at Rest/Orthopnea</string>
+    <string name="weight_gain">Weight Gain</string>
+    <string name="previous_hf_hospitalization">Previous HF Hospitalization</string>
+    <string name="s_p_icd">S/P ICD</string>
+    <string name="nyha_class">NYHA Class</string>
+    <string name="at_high_risk">At High Risk for HF, but wthout Structural Heart Disease or Symptoms of HF NYHA/CCVS Class 0</string>
+    <string name="no_signs_of_hf">Structural Heart Disease, but without signs/symptoms of HF</string>
+    <string name="symptoms_of_hf">Structural Heart Disease with prior or current symptoms of HF</string>
+    <string name="refractory_hf">Refractory HF Requiring Specialized Interventions</string>
+    <string name="nyha_ccvs_class_1">NYHA/CCVS Class 1</string>
+    <string name="nyha_ccvs_class_2">NYHA/CCVS Class 2</string>
+    <string name="nyha_ccvs_class_3">NYHA/CCVS Class 3</string>
+    <string name="nyha_ccvs_class_4">NYHA/CCVS Class 4</string>
+    <string name="two_typical_or_probable_angina"><![CDATA[> 2 Typical or Probable Angina]]></string>
+    <string name="typical_or_probable_angina_more_20_min"><![CDATA[Typical or Probable Angina > 20 min]]></string>
+    <string name="asa_use_in_past_1_week">ASA Use in Past 1 Week</string>
+    <string name="positive_trop_i_or_t">Positive Trop I or T</string>
+    <string name="typical_angina_new">Typical Angina, New</string>
+    <string name="probably_angina_new">Probably Angina, New</string>
+    <string name="undetermined_cp_new">Undetermined CP, New</string>
+    <string name="side_hemithorax">Side/Hemithorax</string>
+    <string name="quality">Quality</string>
+    <string name="sharp">Sharp</string>
+    <string name="pressure">Pressure</string>
+    <string name="tightness">Tightness</string>
+    <string name="soreness">Soreness</string>
+    <string name="heaviness">Heaviness</string>
+    <string name="aggravated_by">Aggravated By</string>
+    <string name="lying">Lying</string>
+    <string name="breathing">Breathing</string>
+    <string name="coughing">Coughing</string>
+    <string name="exertion">Exertion</string>
+    <string name="palpation">Palpation</string>
+    <string name="relieved_by">Relieved By</string>
+    <string name="ntg">NTG</string>
+    <string name="rest">Rest</string>
+    <string name="sitting_up">Sitting-Up</string>
+    <string name="lying_on_side">Lying On-Side</string>
+    <string name="analgesics">Analgesics</string>
+    <string name="radiation">Radiation</string>
+    <string name="jaw">Jaw</string>
+    <string name="back">Back</string>
+    <string name="arm">Arm</string>
+    <string name="nausea">Nausea</string>
+    <string name="diaphoresis">Diaphoresis</string>
+    <string name="faintness">Faintness</string>
+    <string name="unable_to_exercise">Unable to Exercise</string>
+    <string name="circumstance">Circumstance</string>
+    <string name="upright_position">Upright Position, Post Exertion</string>
+    <string name="sudden_noise">Sudden noise or emotion</string>
+    <string name="neck_movement_manipulation">Neck movement, Manipulation</string>
+    <string name="exertional">Exertional</string>
+    <string name="prodromal_symptoms">Prodromal Symptoms</string>
+    <string name="aura">Aura</string>
+    <string name="dizziness">Dizziness</string>
+    <string name="palpitations">Palpitations</string>
+    <string name="syncope_duration_during_syncope">Syncope Duration/During Syncope</string>
+    <string name="cyanosis">Cyanosis</string>
+    <string name="pallor_diaphoresis">Pallor, Diaphoresis</string>
+    <string name="unusual_posture">Unusual Posture</string>
+    <string name="postictal_symptoms">Postictal Symptoms</string>
+    <string name="disorientation">Disorientation</string>
+    <string name="paralysis">Paralysis</string>
+    <string name="prolonged_fatigue">Prolonged Fatigue</string>
+    <string name="intercostal_cp">Intercostal CP</string>
+    <string name="central_precordial_cp">Central/Precordial CP</string>
+    <string name="hf_diagnosis_duration_week">HF Diagnosis Duration/Week</string>
+    <string name="value">Value</string>
+    <string name="lvef">LVEF</string>
+    <string name="hepatojuluar_reflux">Hepatojulular Reflux</string>
+    <string name="jugular_venous_distention">Jugular Venous Distention</string>
+    <string name="displaced_pmi">Displaced PMI</string>
+    <string name="friction_rub">Friction Rub</string>
+    <string name="heart_murmur">Heart Murmur</string>
+    <string name="new_rales">New Rales</string>
+    <string name="pulmonary_edema">Pulmonary Edema</string>
+    <string name="diminished_breath_sounds">Diminished Breath Sounds</string>
+    <string name="abdominal_tenderness">Abdominal Tenderness</string>
+    <string name="any_cns_symptoms">Any CNS Symptoms</string>
+    <string name="cold_clammy_extermities">Cold Clammy Extermities</string>
+    <string name="edema">Edema</string>
+    <string name="difference_in_sbp">Difference in SBP</string>
+    <string name="focus_on_the_most_abnormal_auscultation_foci">Focus on the most abnormal auscultation foci</string>
+    <string name="si_mitral">SI Mitral</string>
+    <string name="loud">Loud</string>
+    <string name="normal">Normal</string>
+    <string name="soft">Soft</string>
+    <string name="s2_aortic">S2 Aortic</string>
+    <string name="p2_pulmonic">P2 Pulmonic</string>
+    <string name="systolic_murmur">Systolic Murmur</string>
+    <string name="crescendo_decrescendo">Crescendo-Decrescedo</string>
+    <string name="early_mid_systolic_peaking">Early-Mid Systolic Peaking</string>
+    <string name="late_systolic_peaking">Late Systolic Peaking</string>
+    <string name="plateau_shaped">Plateau Shaped</string>
+    <string name="halosystolic">Halosystolic</string>
+    <string name="pansystolic">Pansystolic</string>
+    <string name="midsystolic">Midsystolic</string>
+    <string name="softer_with_squat">Softer with Squat</string>
+    <string name="diastolic_murmur">Diastolic Murmur</string>
+    <string name="decrescendo">Decrescendo</string>
+    <string name="rumble">Rumble</string>
+    <string name="mitral_opening_snap">Mitral Opening Snap</string>
+    <string name="s1_tricuspid">S1 Tricuspid</string>
+    <string name="current_therapies">Current Therapies</string>
+    <string name="noncardiac_surgical_risk">Noncardiac Surgical Risk</string>
+    <string name="section_required_title">%s Required</string>
+    <string name="section_required_description">Please complete the %s section before moving forward.</string>
+    <string name="section_required_cta_text">Go to %s</string>
+    <string name="colon">:</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="duration">Duration</string>
+    <string name="vo_max_kg">VO max kg</string>
+    <string name="no_significant_comorbidities">No Significant Comorbidities</string>
+    <string name="calculate_hfss">Calculate HFSS, enter NAmeq, VO₂ max, Heart Rate, and ECG QRS Duration</string>
+    <string name="escalating_in_frequency">Escalating in Frequency, Duration or Severity</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="type_1_dm">Type I DM</string>
+    <string name="type_2_dm">Type II DM</string>
+    <string name="dmnp">Diabetic nepphropathy</string>
+    <string name="dmckd">Diabetic CKD</string>
+    <string name="gestational_dm">Gestational DM</string>
+    <string name="retinopathy">Retinopathy</string>
+    <string name="tobacco_use">Tobacco Use</string>
+    <string name="family_history">Family History</string>
+    <string name="systemic_arterial_hypertension">Systemic Arterial Hypertension</string>
+    <string name="amb_sbp">Amb SBP</string>
+    <string name="amb_dbp">Amb DBP</string>
+    <string name="check_lvh_on_ekg">Check LVH on EKG if Applicable</string>
+    <string name="sbp_treated">SBP Treated</string>
+    <string name="african_american">African American</string>
+    <string name="primary_hyperaldesteronism">Primary Hyperaldesteronism</string>
+    <string name="osa">OSA</string>
+    <string name="pheocromocytoma">Pheocromocytoma</string>
+    <string name="renovascular_atherosclerotic">Renovascular, Atherosclerotic</string>
+    <string name="secondary_hypertension">Secondary Hypertension</string>
+    <string name="headached_blurred_vision_or_ams">Headached, Blurred Vision or AMS</string>
+    <string name="epistaxis">Epistaxis</string>
+    <string name="chest_back_pain_dyspnea">Chest Back Pain/Dyspnea</string>
+    <string name="chem_basic">Chem Basic</string>
+    <string name="na_meq_l">Na meq/l</string>
+    <string name="urine_na_meq_l">Urine Na meq/l</string>
+    <string name="serum_osmolality">Serum Osmolality</string>
+    <string name="urine_osmolality">Urine Osmolality</string>
+    <string name="k_meq_l">K meq/l</string>
+    <string name="creatinine_mg_dl">Creatinine mg/dl</string>
+    <string name="bun_mg_dl">BUN mg/dl</string>
+    <string name="fasting_plasma_glucose">Fasting Plasma Glucose</string>
+    <string name="gfr_ml_min">GFR ml/min/1.73 M2</string>
+    <string name="worsening_renal_fx">Worsening Renal Fx</string>
+    <string name="lipid_profile">Lipid Profile</string>
+    <string name="already_on_statin">Already on Statin</string>
+    <string name="statin_intolerance">Statin Intolerance</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="trg">TRG</string>
+    <string name="ldl_c">LDL-C</string>
+    <string name="hdl_c">HDL-C</string>
+    <string name="apo_b">Apo B</string>
+    <string name="ldl_p">LDL-P</string>
+    <string name="lpa_mg_dl">LPa mg/dl</string>
+    <string name="ascvd_risk">ASCVD Risk</string>
+    <string name="others">Others</string>
+    <string name="hba1c">HBA1C</string>
+    <string name="crp_mg_l">CRP mg/l</string>
+    <string name="nt_probnp_pg_ml">NT-proBNP pg/ml</string>
+    <string name="bnp_pg_ml">BNP pg/ml</string>
+    <string name="albuminuria_mg_gm_or_mg_24hr">Albuminuria Mg.Gm or Mg/24hr</string>
+    <string name="four_antiarrythmic">IV Antiarrythmic</string>
+    <string name="Continuous">Continuous</string>
+    <string name="bolus">Bolus</string>
+    <string name="titration">Titration</string>
+    <string name="monitoring_frequency_q_hr">Monitoring Frequency Q hr</string>
+    <string name="transition_to_po_antiarrythmic">Transition to PO Antiarrythmic</string>
+    <string name="urgent_cv">Urgent CV</string>
+    <string name="defibrillation_acls">Defibrillation/ACLS</string>
+    <string name="four_antihypertensive">IV Antihypertensive</string>
+    <string name="four_vasoactive">IV Vasoactive</string>
+    <string name="four_nps">IV NPS</string>
+    <string name="four_ntg">IV NTG</string>
+    <string name="four_milrinone">IV Milrinone</string>
+    <string name="four_diuretic">IV Diuretic</string>
+    <string name="intermittent">Intermittent</string>
+    <string name="mechanical_ventiallation_or_nippv">Mechanical Ventiallation or NIPPV</string>
+    <string name="respiratory_interventions_q_hr">Respiratory Interventions Q hr</string>
+    <string name="o2_supplement">O2 Supplement % /</string>
+    <string name="four_vasopressors">IV Vasopressors</string>
+    <string name="ultrafiltration">Ultrafiltration</string>
+    <string name="iabp">IABP</string>
+    <string name="temporary_pm">Temporary PM</string>
+    <string name="on_max_tolerated_b_blocker">On Maximum Tolerated B Blocker</string>
+    <string name="on_max_tolerated_acei_arb">On Maximum Tolerated or Intolerant AceI/ARB</string>
+    <string name="chronic_inotrope_dependence">Chronic Inotrope Dependence</string>
+    <string name="intermittent_inotrope_dependence">Intermittent Inotrope Dependence</string>
+    <string name="b_blocker">B Blocker</string>
+    <string name="carvedilol_3125bid">Carvedilol 3.125 bid</string>
+    <string name="carvedilol_625bid">Carvedilol 6.25 bid</string>
+    <string name="carvedilol_125bid">Carvedilol 12.5 bid</string>
+    <string name="carvedilol_25bid">Carvedilol 25 bid</string>
+    <string name="metoprololer_25_qd">MetoprololER 25 qd</string>
+    <string name="metoprololer_50_qd">MetoprololER 50 qd</string>
+    <string name="metoprololer_100_qd">MetoprololER 100 qd</string>
+    <string name="metoprololer_150_qd">MetoprololER 150 qd</string>
+    <string name="metoprololer_200_qd">MetoprololER 200 qd</string>
+    <string name="acel_arb">Acel/ARB</string>
+    <string name="po_diuretic">PO Diuretic</string>
+    <string name="hctz">HCTZ</string>
+    <string name="indapamide">Indapamide</string>
+    <string name="chlorthalidone_metolazone">Chlorthalidone, Metolazone</string>
+    <string name="ccb_other_vasolidators">CCB, Other Vasolidators</string>
+    <string name="current_vka_therapy">Current VKA Therapy</string>
+    <string name="direct_thrombin_inhibitors">Direct Thrombin Inhibitors</string>
+    <string name="factor_xa_inhibitors">Factor Xa Inhibitors</string>
+    <string name="furosemide_40">Furosemide 40</string>
+    <string name="furosemide_80">Furosemide 80</string>
+    <string name="furosemide_80_plus">Furosemide 80+</string>
+    <string name="burnex_1">Burnex 1</string>
+    <string name="burnex_2">Burnex 2</string>
+    <string name="burnex_2_plus">Burnex 2+</string>
+    <string name="torsemide_20">Torsemide 20</string>
+    <string name="torsemide_40">Torsemide 40</string>
+    <string name="torsemide_50_plus">Torsemide 50+</string>
+    <string name="ekg">EKG</string>
+    <string name="st_deviation_more_05_mm">ST Deviation ≥ 0.5mm</string>
+    <string name="stress_testing">Stress Testing</string>
+    <string name="low_voltage_qrs">Low Voltage QRS</string>
+    <string name="abnormal_q_waves">Abnormal Q Waves</string>
+    <string name="lbbb">LBBB</string>
+    <string name="bifascicular">Bifascicular</string>
+    <string name="lahb">LAHB</string>
+    <string name="lvh">LVH</string>
+    <string name="atrial_premature_depolarization">Atrial Premature Depolarization</string>
+    <string name="junctional_premature_depolarization">Junctional Premature Depolarization</string>
+    <string name="frequent_ventricular_pacing_or_ectopy">Frequent Ventricular Pacing or Ectopy</string>
+    <string name="infrequent_ventricular_pacing_or_ectopy">Infrequent Ventricular Pacing or Ectopy</string>
+    <string name="wpw">WPW</string>
+    <string name="svt">SVT</string>
+    <string name="rbbb">RBBB</string>
+    <string name="intraventicular_block">Intraventicular block</string>
+    <string name="atrial_flutter">Atrial Flutter</string>
+    <string name="first_degree_av_block">1st Degree AV Block</string>
+    <string name="second_degree_av_block">2nd Degree AV Block</string>
+    <string name="type_1">Type 1</string>
+    <string name="type_2">Type 2</string>
+    <string name="third_degree_av_block">3rd Degree AV Block</string>
+    <string name="duke_treadmill_score">Duke Treadmill Score</string>
+    <string name="serum_stress_summed_score">Serum Stress Summed Score</string>
+    <string name="dse_ischemic_threshold">DSE Ischemic Threshold, %MPHR at the Onset of Ischemia</string>
+    <string name="dse_or_stress_mri">DSE or Stress MRI, Number of Segments with new WMA</string>
+    <string name="stress_difference_score">Stress Difference Score</string>
+    <string name="ischemic_myocardium_on_mps">% Ishemic Myocardium on MPS</string>
+    <string name="ex_time_min">Ex Time (min)</string>
+    <string name="max_st_mm">Max ST (mm)</string>
+    <string name="angina_index">Angina Index</string>
+    <string name="no_angina_during_exercise">No Angina During Exercise</string>
+    <string name="st_elevation">ST Elevation</string>
+    <string name="abnormal_bp_response">Abnormap BP Response</string>
+    <string name="ventricular_tachycardia">Ventricular Tachycardia</string>
+    <string name="prolong_st_depression">Prolong ST Depression</string>
+    <string name="tid_or_significant_stress_induced_lv_disfunction">TID or Significant Stress-Induced LV Disfunction</string>
+    <string name="fixed_perfusion_defects_or_akinetic_dyskinetic">Fixed Perfusion Defects or Akinetic/Dyskinetic WMA on DSE</string>
+    <string name="viability_present">Viability Present</string>
+    <string name="artifactural_uninterpretable_images">Artifactual/Uninterpretable Images</string>
+    <string name="echocardiography">Echocardiography</string>
+    <string name="pericardial_effusion">Pericardial Effusion</string>
+    <string name="dlco">DLCO %</string>
+    <string name="fev_lt">FEV1 /lt</string>
+    <string name="fev1_percent">FEV1 %</string>
+    <string name="ic_tlc">IC/TLC %</string>
+    <string name="rwma">RWMA</string>
+    <string name="enlarged_la_or_lvh">Enlarged LA or LVH</string>
+    <string name="e_a_less_05_and_dt_more_280ms"><![CDATA[E/A < 0.5 and DT > 280ms]]></string>
+    <string name="grade_more_2_diastolic_dysfunction">Grade ≥ 2 Diastolic Dysfunction</string>
+    <string name="respiratory_ivs_shift">Respiratory IVS Shift</string>
+    <string name="mitral_e_variation">Mitral E Variation</string>
+    <string name="hepatic_vein_exp_diastolic_reversal">Hepatic Vein Exp Diastolic Reversal</string>
+    <string name="enlarged_ra">Enlarged RA</string>
+    <string name="enlarged_rv">Enlarged RV</string>
+    <string name="midsystolic_notch">Midsystolic Notch</string>
+    <string name="lv_latereal_annulus_e_e">LV Latereal Annulus E/E\'</string>
+    <string name="trj_velocity">TRJ Velocity m/sec</string>
+    <string name="chest_x_ray">Chest X-Ray</string>
+    <string name="rhc">RHC</string>
+    <string name="total">Total</string>
+    <string name="coronary_calcium_score">Coronary Calcium Score</string>
+    <string name="right_pleural_effusion">Right Pleural Effusion</string>
+    <string name="left_pleural_effusion">Left Pleural Effusion</string>
+    <string name="enlarged_cardiac_solhouette">Enlarged Cardiac Solhouette</string>
+    <string name="widened_mediasteneum">Widened Mediasteneum</string>
+    <string name="pneumothorax">Pneumothorax</string>
+    <string name="t_wave_inversion_more_1mm"><![CDATA[T Wave Inversion > 1mm]]></string>
+    <string name="idiopathic_dcm_nonischemic">Idiopathic/DCM/Nonishchemic</string>
+    <string name="post_mi_more_45"><![CDATA[Post MI > 45 Days]]></string>
+    <string name="lv_aneurysm">LV Aneurysm</string>
+    <string name="ischemic_post_mi_less_45"><![CDATA[Ischemic Post MI < 45 Day]]></string>
+    <string name="cardiotoxins">Cardiotoxins</string>
+    <string name="familial_cmp">Familial CMP Associated with Sudden Death</string>
+    <string name="lvh_more_30">LVH ≥ 30mm</string>
+    <string name="abnormal_bp_response_to_exercise">Abnormal BP Response to Exercise</string>
+    <string name="history_of_sudden_death">History of Sudden Death</string>
+    <string name="rest_dynamic_peak"><![CDATA[Rest/Dynamic Peak LVOT Gradient > 50 mmHg]]></string>
+    <string name="myocarditis">Miocarditis</string>
+    <string name="rv_dysplasia">RV Dysplasia</string>
+    <string name="hocm">HOCM</string>
+    <string name="peripartum_cmp">Peripartum CMP</string>
+    <string name="acute_coronary_syndrome">Acute Coronary Syndrome</string>
+    <string name="more_2_angina_24hr">≥ 2 Angina/24hr</string>
+    <string name="angina_more_20min"><![CDATA[Angina > 20min]]></string>
+    <string name="more_2_antanginal">≥ 2 Antanginal</string>
+    <string name="stemi">STEMI</string>
+    <string name="anterior">Anterior</string>
+    <string name="inferior">Inferior</string>
+    <string name="other">Other</string>
+    <string name="refractory_angina">Refractory Angina</string>
+    <string name="changing_trop_i">Changing Trop I</string>
+    <string name="pci_cabg">PCI, CABG</string>
+    <string name="last_procedure">Last Procedure (years ago)</string>
+    <string name="bms">BMS</string>
+    <string name="des">DES</string>
+    <string name="cabg">CABG</string>
+    <string name="auto_vein">Auto Vein</string>
+    <string name="auto_artery">Auto Artery</string>
+    <string name="non_auto">Non Auto</string>
+    <string name="stable_ang">STABLE ANG</string>
+    <string name="lm">LM</string>
+    <string name="lad">LAD</string>
+    <string name="rca">RCA</string>
+    <string name="lcx">LCX</string>
+    <string name="icd_10">ICD-10</string>
+    <string name="chronic_total_occlusion">Chronic Total Occlusion</string>
+    <string name="coronary_aneurysm">Coronary Aneurysm</string>
+    <string name="coronary_dissection">Coronary Dissection</string>
+    <string name="calcified_coronary_lesion">Calcified Coronary Lesion</string>
+    <string name="lipid_rich_plaque">Lipid Rich Plaque</string>
+    <string name="documented_vasospasm">Documented Vasospasm</string>
+    <string name="vessel_more_50"><![CDATA[# Vessel > 50%]]></string>
+    <string name="symptomatic">Symptomatic</string>
+    <string name="acutely">Acutely</string>
+    <string name="chronic_af">Chronic AF</string>
+    <string name="persistent_af">Persistent AF</string>
+    <string name="paroxymal_af">Paroxymal AF</string>
+    <string name="duration_days">Duration (Days)</string>
+    <string name="s_p_successful_ablation">S/P Successful Ablation</string>
+    <string name="ventricular_rate_control">Ventricular Rate Control</string>
+    <string name="heart_rate_with_activity">Heart Rate with Activity</string>
+    <string name="rhytm_control">Rhytm Control</string>
+    <string name="current_aniarrythmic_therapy">Current Antiarrythmic Therapy</string>
+    <string name="sotalol_amiodarone_multaq_dofetilide">Sotalol, Amiodarone, Multaq, Dofetilide</string>
+    <string name="propofonone_flecanide">Propofonone, Flecanide</string>
+    <string name="liver_disease">Liver Disease</string>
+    <string name="previous_tia_cva">Previous TIA/CVA</string>
+    <string name="thyrotoxicosis">Thyrotoxicosis</string>
+    <string name="thromboembolic_prevention_vka_therapy">Thromboembolic Prevention\nThromboembolic Therapy\nVKA (Warfarin) Therapy\nPeriprocedural Anticoagulation</string>
+    <string name="inr">INR</string>
+    <string name="patient_bleed_risk">Patient Bleed Risk</string>
+    <string name="procedural_bleed_risk">Procedural Bleed Risk</string>
+    <string name="active_gastroduodenal_ulcer">Active Gastroduodenal Ulcer</string>
+    <string name="bleed_in_3_mo_before_admission">Bleed in 3 mo before admission</string>
+    <string name="platelet_count_less_50"><![CDATA[Platelet Count <50 x 190/L]]></string>
+    <string name="icu_or_ccu_admission">ICU or CCU Admission</string>
+    <string name="central_venous_catheter">Central Venous Catheter</string>
+    <string name="rheumatic_disease">Rheumatic Disease</string>
+    <string name="deep_venous_thrombosis">Deep Venous Thrombosis</string>
+    <string name="pulmonary_embolism">Pulmonary Embolism</string>
+    <string name="dvy_pe_diagnosis_prevention">DVY/PE Diagnosis/Prevention</string>
+    <string name="major_surgery_trauma">Major Surgery/Trauma</string>
+    <string name="major_gyn_urology">Major Gyn/Urology</string>
+    <string name="tkr">TKR</string>
+    <string name="thr">THR</string>
+    <string name="hip_fracture">Hip Fracture</string>
+    <string name="spine_surgery">Spine Surgery</string>
+    <string name="spinal_cord_injury">Spinal Cord Injury</string>
+    <string name="medical_illness">Medical Illness</string>
+    <string name="hemoptysis">Hemoptysis</string>
+    <string name="unilateral_lower_limb_pain">Unilateral Lower Limb Pain</string>
+    <string name="painful_deep_venous_palpation_and_edema">Painful Deep Venous Palpation and Edema</string>
+    <string name="active_cancer">Active Cancer</string>
+    <string name="previous_vte">Previous VTE</string>
+    <string name="respiratory_failure">Respiratory Failure</string>
+    <string name="already_known_thrombophilic_condition">Already Known Thrombophilic Condition</string>
+    <string name="recent_trauma_surgery">Recent (≤ 1mo) Trauma and/or Surgery</string>
+    <string name="reduced_mobility">Reduced Mobility, Anticipated ≥ 3 days</string>
+    <string name="ongoing_hormonal_treatment">Ongoing Hormonal Treatment</string>
+    <string name="acute_infection_rheumatologic_disorder">Acute Infection and/or Rheumatologic Disorder</string>
+    <string name="acute_cva">Acute CVA</string>
+    <string name="nihss">NIHSS</string>
+    <string name="unilateral_weakness">Unilateral Weakness</string>
+    <string name="speech_disturbance">Speech Disturbance</string>
+    <string name="duration_of_symptoms">Duration of Symptoms</string>
+    <string name="pre_hospital_care">Pre Hospital Care</string>
+    <string name="mechanical_cageball">Mechanical Cageball</string>
+    <string name="mechanical_disk_bileaflet_mitral">Mechanical Disk/Bileaflet Mitral</string>
+    <string name="mechanical_disk_bileaflet_aortic">Mechanical Disk/Bileaflet Aortic</string>
+    <string name="rheumatic_mitral_valve_disease">Rheumatic Mitral Valve Disease</string>
+    <string name="la_thrombus">LA Thrombus</string>
+    <string name="la_diameter">LA Diameter</string>
+    <string name="bioprosthetic_valve">Bioprosthetic Valve</string>
+    <string name="systemic_embolism">Systemic Embolism</string>
+    <string name="infective_endrocarditis">Infective Endrocarditis</string>
+    <string name="left_sided_pv_thrombosis">Left Sided PV Thrombosis</string>
+    <string name="right_sided_pv_thrombosis">Right Sided PV Thrombosis</string>
+    <string name="cardiac_source_of_embolism">Other Cardiac Source of Embolism\n(Non Atrial Fibrillation)</string>
+    <string name="non_acute_arterial_ischemic_stroke">Non Acute Arterial Ischemic Stroke</string>
+    <string name="aortic_arch_atherosclerosis">Aortic Arch Atherosclerosis</string>
+    <string name="lv_thrombus">LV Thrombus</string>
+    <string name="pfo">PFO</string>
+    <string name="mvp">MVP</string>
+    <string name="mitral_annular_valcification">Mitral Annular Valcification</string>
+    <string name="calcific_aortic_valve_disease">Calcific Aortic Valve Disease</string>
+    <string name="hit">HIT</string>
+    <string name="hypercoagulable_state">Hypercoagulable State</string>
+    <string name="cerebral_venous_thrombosis">Cerebral Venous Thrombosis</string>
+    <string name="perioperative">Perioperative</string>
+    <string name="minor_procedure">Minor Procedure</string>
+    <string name="surgery_invasive_procedure">Surgery/Invasive Procedure</string>
+    <string name="emergency_surgery_major_bleed">Emergency Surgery/Major Bleed</string>
+    <string name="nsvt">NSVT</string>
+    <string name="monomorphic_vt">Monomorphic VT</string>
+    <string name="repetitive_monomorphic_vt">Repetitive Monomorphic VT</string>
+    <string name="polymorphic_vt">Polymorphic VT</string>
+    <string name="incessant_vt">Incessant VT</string>
+    <string name="idiopathic_vt">Idiopathic VT</string>
+    <string name="symptomatic_carotid_disease">Symptomatic Carotid Disease</string>
+    <string name="noncardioembolic_vca_tia">Noncardioembolic VCA/TIA Associated with Carotid Plaque</string>
+    <string name="more_50_carotid_stenosis">≥ 50% Carotid Stenosis/ S/P CEA</string>
+    <string name="peripheric_vascular_disease">Peripheric Vascular Disease</string>
+    <string name="abi_less_09"><![CDATA[ABI < 0.9]]></string>
+    <string name="claudication">Claudication</string>
+    <string name="critical_limb_ischemia">Critical Limb Ischemia</string>
+    <string name="endovascular_revascularization">Endovascular Revascularization</string>
+    <string name="peripheral_artery_bypass_graft">Peripheral Artery Bypass Graft</string>
+    <string name="abdominal_aortic_aneurysm">Abdominal Aortic Aneurysm</string>
+    <string name="aa_diameter_more_5"><![CDATA[AA Diameter > 5cm]]></string>
+    <string name="three_button_alert_top_button_text">Any known CV Disease</string>
+    <string name="three_button_alert_middle_button_text">Any major CV risk factors</string>
+    <string name="non_limiting_angina">Non-Limiting Angina</string>
+    <string name="exercise_limiting_angina">Exercise Limiting Angina</string>
+    <string name="lphb">LPHB</string>
+    <string name="snackbar_range_message">Value for \"%1$s\" exceeds the limits. Please, use range from %2$s to %3$s.</string>
+    <string name="snackbar_empty_message">%1$s is mandatory to fill.</string>
+    <string name="exit_evaluation">Exit Evaluation</string>
+    <string name="reset_field">Reset Field</string>
+    <string name="snackbar_bottom_button_error">Please, fill page with valid values before proceeding.</string>
+    <string name="snackbar_bottom_button_error_minimum_not_entered">Please, fill required field in Bio Section before proceed.</string>
+    <string name="snackbar_bottom_button_login_error">Authentication is not successful. Email or password is not valid.</string>
+    <string name="snackbar_bottom_button_register_error">Sorry! Register is not successful.</string>
+    <string name="snackbar_bottom_button_register_succeed">Register is successful!</string>
+    <string name="snackbar_bottom_button_unexpected_error_in_compute_evaluation">Sorry :(. We encountered an unexpected error while computing evaluations.</string>
+    <string name="snackbar_bottom_button_session_expire_error">Session expired. Please login to continue.</string>
+    <string name="cancel_screen_alert_message">Screen, you\'re trying to leave, is not correctly completed.</string>
+    <string name="cancel_screen_alert_cancel_all">Reset all changes and go back</string>
+    <string name="atherosclerotic_vascular_disease">Atherosclerotic Vascular Disease</string>
+    <string name="traumatic_injury">Traumatic Injury</string>
+    <string name="nonspecific_st_abnormality">Nonspecific ST Abnormality</string>
+    <string name="complete_evaluation">Complete Evaluation</string>
+    <string name="return_to_the_evaluation_list_to_make_edits">Return to the evaluation list to make edits?</string>
+    <string name="output">Output</string>
+    <string name="overview">Overview</string>
+    <string name="therapeutics">Therapeutics</string>
+    <string name="references">References</string>
+    <string name="no_info_available">No information available for this section.</string>
+    <string name="heart_specialist_partner">Heart Specialist Partner</string>
+    <string name="hours">Hours</string>
+    <string name="view_more_specialists">View more specialists in your area</string>
+    <string name="view_more_information_browser">View more information (browser)</string>
+    <string name="symptomatic_sinus_node_dysfunction">Symptomatic Sinus Node Dysfunction</string>
+    <string name="high_grade_av_node_disease">High Grade AV Node Disease</string>
+    <string name="isolated_neurocardiogenic_unexplained_syncope">Isolated Neurocardiogenic / Unexplained Syncope</string>
+    <string name="carotid_sinus_hypersensitivity">Carotid Sinus Hypersensitivity</string>
+    <string name="pots">POTS (Enter Standing Heart Rate Above)</string>
+    <string name="autonomic_failure_syndrome">Autonomic Failure Syndrome</string>
+    <string name="history_of_cardiac_arrest">History of Cardiac Arrest</string>
+    <string name="brugada_syndrome">Brugada Syndrome</string>
+    <string name="long_qt">LongQT</string>
+    <string name="sarcoidosis_giant_cell_chagas">Sarcoidosis / Giant Cell / Chagas</string>
+    <string name="prior_bleed_during_bridging_similar">Prior Bleed During Bridging/Similar</string>
+    <string name="prior_asa_use">Prior ASA Use</string>
+    <string name="risk_not_clinically_important_low">Risk Not Clinically Important/Low</string>
+    <string name="risk_uncertain">Risk Uncertain</string>
+    <string name="risk_intermediate_high">Risk Intermediate/High</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="height_hint">Enter height in cm</string>
+    <string name="atypical_af">Atypical AF</string>
+    <string name="typical_af">Typical AF</string>
+    <string name="emergency_surgery">Emergency Surgery</string>
+    <string name="intermediate_risk">Intermediate Risk</string>
+    <string name="high_risk">High Risk</string>
+    <string name="low_risk_surgery_cataract_plastic">Low Risk Surgery (Cataract, Plastic)</string>
+    <string name="unable_to_exercise_physically_inactive">Unable to Exercise, Physically Inactive</string>
+    <string name="mets">METS</string>
+    <string name="duke_activity_score_index">Duke Activity Score Index</string>
+    <string name="associated_with">Associated With</string>
+    <string name="weight_hint">Enter weight in kilos</string>
+    <string name="heart_rate_hint">Enter the Heart Rate</string>
+    <string name="sbp_hint">Enter SBP value</string>
+    <string name="dbp_hint">Enter DBP value</string>
+    <string name="torsades">Torsades</string>
+    <string name="last_thromboembolic_event_months_ago">Last Thromboembolic Event (month ago)</string>
+    <string name="duration_hours">Duration/Hours</string>
+    <string name="left_sided_s3_or_s4_gallop">Left Sided S3 or S4 Gallop</string>
+    <string name="murmur">Murmur</string>
+    <string name="positive_troponin">Positive Troponin</string>
+    <string name="troponin_x_more_3_above_normal">Troponin X ≥ 3 Above Normal</string>
+    <string name="troponin_1_3_above_normal">Troponin X 1–3 Above Normal</string>
+    <string name="orthostatic_sbp">Orthostatic SBP</string>
+    <string name="orthostatic_symptomps">Orthostatic Symptoms</string>
+    <string name="waist_circ">Waist Circ.</string>
+    <string name="aa">AA</string>
+    <string name="pregnancy">Pregnancy</string>
+    <string name="o2sat">O2sat%</string>
+    <string name="acutely_symptomatic">Acutely Symptomatic</string>
+    <string name="page">PAGE&#160;</string>
+    <string name="bio_pah_main">Bio/PAH Main</string>
+    <string name="pah">PAH</string>
+    <string name="svr_wu">SVR, WU</string>
+    <string name="congenital">Congenital</string>
+    <string name="asd_less_2cm"><![CDATA[ASD < 2cm]]></string>
+    <string name="vsd_less_1cm"><![CDATA[VSD < 1cm]]></string>
+    <string name="post_corrective_surgery">Post Corrective Surgery</string>
+    <string name="eisenmenger">Eisenmenger</string>
+    <string name="scleroderma">Scleroderma</string>
+    <string name="sle">SLE</string>
+    <string name="hiv">HIV</string>
+    <string name="portal_hypertension">Portal Hypertension</string>
+    <string name="respiratory_disease_hypoxia">Respiratory Disease/Hypoxia</string>
+    <string name="ahi">AHI</string>
+    <string name="ipf_ild">IPF/ILD</string>
+    <string name="copd">COPD</string>
+    <string name="idiopathic">Idiopathic</string>
+    <string name="pvod_pch">PVOD/PCH</string>
+    <string name="splenectomy_sc">Splenectomy/SC</string>
+    <string name="ctep">CTEP</string>
+    <string name="familial">Familial</string>
+    <string name="drugs_toxins">Drugs/Toxins</string>
+    <string name="acs">ACS</string>
+    <string name="chd">CHD</string>
+    <string name="bmi_kg_m">BMI kg/m</string>
+    <string name="sah">SAH</string>
+    <string name="af_svt">AF/SVT</string>
+    <string name="dm">DM</string>
+    <string name="tr_jet_velocity">TR Jet Velocity</string>
+    <string name="exercise_rsvp">Exercise RSVP</string>
+    <string name="advanced_echocardiography">Advanced Echocardiography</string>
+    <string name="check_if_lv_td_done">Check if LV TD Done</string>
+    <string name="check_if_rvot_pw_done">Check if RVOT PW Done</string>
+    <string name="check_if_tapse_done">Check if TAPSE Done</string>
+    <string name="e_e_less_8"><![CDATA[E/E\' < 8]]></string>
+    <string name="short_paat">Short PAAT</string>
+    <string name="tapse_less_2"><![CDATA[TAPSE < 2]]></string>
+    <string name="e_e_8_16">E/E\' 8–16</string>
+    <string name="midsys_notch">Midsys Notch</string>
+    <string name="e_e_more_16"><![CDATA[E/E\' > 16]]></string>
+    <string name="new_onset_atrial_fibrilation">New Onset Atrial Fibrillation</string>
+    <string name="aortic_stenosis">Aortic Stenosis</string>
+    <string name="valvular">Valvular</string>
+    <string name="calcified_aortic_valve_reduced_systolic_opening">Calcified Aortic Valve w/ Reduced Systolic Opening</string>
+    <string name="rheumatic_av">Rheumatic AV</string>
+    <string name="congenitally_stenotic_aortic_valve">Congenitally Stenotic Aortic Valve</string>
+    <string name="calculated_aortic_valve_area">Calculated Aortic Valve Area</string>
+    <string name="aortic_mean_pressure_gradient">Aortic Mean Pressure Gradient</string>
+    <string name="aortic_valve_valocity">Aortic Valve Valocity</string>
+    <string name="stroke_volume_index_sv_sba">Stroke Volume Index: SV/SBA</string>
+    <string name="indexed_valve_area_ava_bsa">Indexed Valve Area: AVA/BSA</string>
+    <string name="biscuspid_aortic_root_diameter">Bicuspid/Aortic Root Diameter</string>
+    <string name="mitral_stenosis">Mitral Stenosis</string>
+    <string name="mva_cm_2">MVA cm^2</string>
+    <string name="pht_msec">PHT msec</string>
+    <string name="rheumatic_mv_tv">Rheumatic MV/TV</string>
+    <string name="favorable_valve_morphology">Favorable Valve Morphology</string>
+    <string name="la_clot">LA Clot</string>
+    <string name="pulmonic_stenosis">Pulmonic Stenosis</string>
+    <string name="tricuspid_stenosis">Tricuspid Stenosis</string>
+    <string name="pulmonic_valve_velocity">Pulmonic Valve Velocity</string>
+    <string name="aortic_regurgitation">Aortic Regurgitation</string>
+    <string name="holodiastolic_flow_reversal">Holodiastolic Flow Reversal</string>
+    <string name="vena_contracta_width">Vena Contracta Width</string>
+    <string name="regurgitant_volume_ml_beat">Regurgitant Volume ml/beat</string>
+    <string name="regurgitant_fraction">Regurgitant Fraction</string>
+    <string name="ero">ERO</string>
+    <string name="lvedd_mm">LVEDd mm</string>
+    <string name="lvesd_mm">LVESd mm</string>
+    <string name="aortic_root_diameter">Aortic Root Diameter</string>
+    <string name="primary_mitral_regurgitation">Primary Mitral Regurgitation</string>
+    <string name="tricuspid_regurgitation">Tricuspid Regurgitation</string>
+    <string name="annular_diameter">Annular Diameter /mm</string>
+    <string name="central_jet_area_cm_2">Central Jet Area cm^2</string>
+    <string name="hepatic_vein_flow_reversal">Hepatic Vein Flow Reversal</string>
+    <string name="abnormal_tv_leaflets">Abnormal TV Leaflet(s)</string>
+    <string name="pulmonic_regurgitation">Pulmonic Regurgitation</string>
+    <string name="wide_regurfitant_jet">Wide Regurfitant Jet</string>
+    <string name="abnormal_pulmonic_valve_leaflets">Abnormal Pulmonic Valve Leaflets</string>
+    <string name="valvular_surgery_risk">Valvular Surgery Risk</string>
+    <string name="low">Low</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="high">High</string>
+    <string name="prohibitive">Prohibitive</string>
+    <string name="other_surgical_risk">Other Surgical Risk</string>
+    <string name="high_risk_supra_inguinal_vascular_surgery">High Risk (Supra Inguinal Vascular Surgery)</string>
+    <string name="low_risk_cataract_plastic">Low Risk (Cataract, Plastic)</string>
+    <string name="other_cardiac">Other Cardiac</string>
+    <string name="advanced_lhf">Advanced LHF</string>
+    <string name="heart_failure_duration">Heart Failure Duration</string>
+    <string name="heart_failure_duration_week">Heart Failure Duration/Week</string>
+    <string name="hfplvf">HFPLVF</string>
+    <string name="failed_output_rx">Failed Output Rx</string>
+    <string name="crt_icd">CRT/ICD</string>
+    <string name="clinics">Clinics</string>
+    <string name="cardio_shock">Cardio Shock</string>
+    <string name="dyspnea_at_rest_more_2_hrs_after_rx"><![CDATA[Dyspnea at Rest > 2Hrs after Rx/Orthopnea]]></string>
+    <string name="Etiology">Etiology</string>
+    <string name="dcm">DCM</string>
+    <string name="family_history_of_sudden_death">Family History of Sudden Death</string>
+    <string name="ischemic">Ischemic</string>
+    <string name="familial_cmp_associated_sudden_death">Familial CMP Associated w/ Sudden Death</string>
+    <string name="mi_more_45_days"><![CDATA[MI > 45 Days]]></string>
+    <string name="stage_class">Stage/Class</string>
+    <string name="frequent_hospital_admissions">Frequent Hospital Admissions</string>
+    <string name="arrthymias">Arrthymias</string>
+    <string name="av_node_disease">AV Node Disease</string>
+    <string name="sinus_node_dysfunction">Sinus Node Dysfunction</string>
+    <string name="home_therapeutics">Home Therapeutics</string>
+    <string name="enlarged_la">Enlarged LA</string>
+    <string name="on_set_of_heart_failure">On Set of Heart Failure</string>
+    <string name="new_onset_heart_failure_initial_evaluation">New Onset Heart Failure/Initial Evaluation</string>
+    <string name="laboratory_ekg">Laboratory/EKG</string>
+    <string name="platelets_k_ml">Platelets K/ml</string>
+    <string name="albumin_g_dl">Albumin g/dl</string>
+    <string name="ast_u_ml">AST U/ml</string>
+    <string name="bun_u_dl">BUN U/dl</string>
+    <string name="hematocrit">Hematocrit %</string>
+    <string name="pr_duration">PR Duration</string>
+    <string name="qrs_duration">QRS Duration</string>
+    <string name="mean_pap_mmhg">MEAN PAP, mmHg</string>
+    <string name="pvr_wu">PVR, WU</string>
+    <string name="lvedp_mmhg">LVEDP, mmHg</string>
+    <string name="pcwp_mmgh">PCWP, mmHg</string>
+    <string name="cl_lt_min_sq">Cl lt/min/sq</string>
+    <string name="ra_pressure_mmhg">RA Pressure, mmHg</string>
+    <string name="v_wave_amplitude">V Wave Amplitude</string>
+    <string name="no_v_wave">No V Wave</string>
+    <string name="padp_mmhg">PADP, mmHg</string>
+    <string name="rvedp_mmgh">RVEDP, mmHg</string>
+    <string name="six_mw_distance">6MW Distance</string>
+    <string name="max_vo_mg_kg_min">Max VO₂ mg/kg/min</string>
+    <string name="change_font_menu_title">Aa</string>
+    <string name="text_size">Text Size</string>
+    <string name="terms_of_use_text"><![CDATA[
+        <b>MEDICAL SOFTWARE, L.L.C.<br/>TERMS AND CONDITIONS OF USE<br/>PLEASE READ THESE TERMS AND
+            CONDITIONS OF USE CAREFULLY BEFORE USING THIS SITE.
+        </b>
+        <br/>By using this site, you signify your assent to these Terms and Conditions. If you do not
+        agree
+        to all of these Terms and Conditions of use, do not use this site!<br/>Medical Software, LLC.
+        (\"Medical Software\") may revise and update these Terms and Conditions at any time. Your
+        continued usage of the Medical Software website will mean you accept those changes.<br/><b>The
+            Site
+            Does Not Provide Medical Advice</b><br/>The contents of the Medical Software Site, such as
+        software, text, graphics, images, and other material (\"Software\") contained on the Medical
+        Software Site are for informational purposes only. The Software is not intended to be a
+        substitute for professional medical advice, diagnosis, or treatment. You should always seek
+        the
+        advice of your physician or other qualified health provider with any questions you may have
+        regarding a medical condition. Never disregard professional medical advice or delay in
+        seeking
+        it because of something you have read on the Medical Software Site or from your use of the
+        Software!<br/>If you think you may have a medical emergency, call your doctor or 911
+        immediately.
+        Medical Software does not recommend or endorse any specific tests, physicians, products,
+        procedures, opinions, or other information that may be mentioned on the Site. Reliance on
+        any
+        information provided by Medical Software appearing on the Site or from your use of the
+        Software
+        is solely at your own risk.<br/><b>Use of Software</b><br/>Medical Software authorizes you to
+        download
+        and install on a computer or mobile device a single copy of the Software on the Medical
+        Software
+        Site solely for your personal, noncommercial use if you include the following copyright
+        notice:
+        \"© 2013 Medical Software, LLC. All Rights Reserved\" and other copyright and proprietary
+        rights
+        notices that are contained in the Software. The grant of a right to non-commercial use of
+        the
+        Software is the only right granted herein. Any special rules for the use of Software
+        accessible
+        on the Medical Software Site may be included elsewhere within the Site and are incorporated
+        into
+        these Terms and Conditions by reference.<br/>The Software is protected by patent and copyright
+        under United States laws. Title to the Software remains with Medical Software. Any use of
+        the
+        Software not expressly permitted by these Terms and Conditions is a breach of these Terms
+        and
+        Conditions and may violate patent, copyright, trademark, and other laws. Software and
+        features
+        are subject to change or termination without notice in the discretion of Medical Software.
+        All
+        rights not expressly granted herein are reserved to Medical Software. Use of the Software on
+        this site is licensed under U.S. Patent No. 7,306,562.<br/>If you violate any of these Terms
+        and
+        Conditions, your permission to use the Software automatically terminates and you must
+        immediately destroy any copies you have made of any portion of the Software.<br/><b>Use
+            Prohibitions</b><br/>You agree that you shall not: (a) modify, reverse engineer, or create
+        derivative works based on the Software; (b) make unauthorized copies of the Software; (c)
+        rent,
+        sell, transfer or grant any rights in and to any copy of the Software, in any form, to any
+        third
+        party; (d) remove any proprietary notices, labels, or marks on any copy of the Software; (e)
+        distribute any copy of the Software to any third party; or (f) use the Software in any
+        manner
+        other than as expressly provided herein.<br/><b>Ownership</b><br/>Medical Software retains
+        ownership
+        of all right, title, and interest (including patent and copyright) in and to the Software,
+        associated documentation, and all copies of the Software. Nothing in these Terms and
+        Conditions
+        constitutes a transfer or conveyance of any right, title, or interest in the Software or
+        associated documentation, or a sale of the Software, associated documentation, or copies of
+        the
+        Software.<br/><b>No Warranties</b><br/>You understand and agree that Medical Software and any
+        services, software or information contained on or provided by the Medical Software Site is
+        provided on an “as is” basis. Medical Software does not make any express or implied
+        warranties,
+        representations or endorsements whatsoever (including without limitation warranties of title
+        or
+        noninfringement, or the implied warranties of merchantability or fitness for a particular
+        purpose) with regard to the service or any merchandise information or service provided
+        through
+        the service. Nothing in this agreement shall give rise to any obligation to support the
+        Software.<br/><b>Limitation of Liability</b><br/>The use of the Software is entirely at your own
+        risk,
+        and in no event shall Medical Software be liable for any direct, indirect, incidental,
+        consequential, special, exemplary, punitive, or any other monetary or other damages, fees,
+        fines, penalties or liabilities arising out of or relating in any way to your use of the
+        Software, or the Medical Software Site, and/or content or information provided herein. Your
+        sole
+        and exclusive remedy for dissatisfaction with the Software is to stop using the
+        Software.<br/><b>
+            Indemnity</b><br/>You agree to defend, indemnify, and hold Medical Software, its officers,
+        directors, members, employees, agents, licensors, and suppliers, harmless from and against
+        any
+        claims, actions or demands, liabilities, and settlements including without limitation,
+        reasonable legal and accounting fees, resulting from, or alleged to result from, your
+        violation
+        of these Terms and Conditions.<br/><b>Jurisdiction</b><br/>You expressly agree that exclusive
+        jurisdiction for any dispute with Medical Software, or in any way relating to your use of
+        the
+        Medical Software Site, resides in the courts of the State of Georgia and you further agree
+        and
+        expressly consent to the exercise of personal jurisdiction in the courts of the State of
+        Georgia
+        in connection with any such dispute including any claim involving Medical Software or its
+        affiliates, subsidiaries, employees, contractors, members, officers, directors, and
+        telecommunication providers.<br/>These Terms and Conditions are governed by the substantive
+        laws of
+        the State of Georgia, without respect to its conflict of laws principles. If any provision
+        of
+        these Terms and Conditions is found to be invalid by any court having competent
+        jurisdiction,
+        the invalidity of such provision shall not affect the validity of the remaining provisions
+        of
+        these Terms and Conditions, which shall remain in full force and effect. No waiver of any of
+        these Terms and Conditions shall be deemed a further or continuing waiver of such term or
+        condition or any other term or condition.<br/><b>Discontinuance of Services</b><br/>Medical
+        Software
+        reserves the right to modify, discontinue, temporarily or permanently, this site, or any
+        part
+        thereof, at any time, with or without notice. In addition, your access to the site may be
+        discontinued at any time if you violate the terms of this agreement or if we determine, for
+        any
+        other reason, that it is no longer appropriate for you to have access to the site.<br/><b>
+            Complete
+            Agreement</b><br/>Except as expressly provided in a particular \"legal notice\" on the
+        Medical
+        Software Site, these Terms and Conditions constitute the entire agreement between you and
+        Medical Software with respect to the use of the Medical Software Site and Software.<br/>]]>
+    </string>
+    <string name="saved">Saved</string>
+    <string name="review_of_systems">Review of Systems</string>
+    <string name="weight_change">Weight Change</string>
+    <string name="osa_symptoms">OSA Symptoms</string>
+    <string name="previous_dvt_pe">Previous DVT/PE</string>
+    <string name="active_peptic_ulcer_disease">Active Peptic Ulcer Disease</string>
+    <string name="tia">TIA</string>
+    <string name="bleed_in_the_past_3_months">Bleed in the Past 3 Months</string>
+    <string name="orthopnea">Orthopnea</string>
+    <string name="leg_swelling">Leg swelling</string>
+
+    <string name="ckd">CKD</string>
+    <string-array name="home_menu">
+        <item>@string/home</item>
+        <item>@string/about</item>
+        <item>@string/sign_in_up</item>
+    </string-array>
+
+
+    <string name="authenticating_progress_message">Authenticating..</string>
+    <string name="registering_progress_message">Registering..</string>
+    <string name="compute_evaluation_progress_message">Computing Evaluations..</string>
+    <string name="retrieving_saved_evaluations_error">Sorry. We could not fetch saved evaluations.</string>
+    <string name="retrieving_saved_evaluations">Retrieving evaluations..</string>
+    <string name="retrieving_the_evaluation">Retrieving the evaluation..</string>
+    <string name="retrieving_the_evaluation_error">Sorry. Could not retrieve the evaluation..</string>
+    <string name="no_internet_connection_alert">We could not connect to the internet. Would you like to quit the app?</string>
+    <string name="exit_app">We could not connect to the internet. Would you like to quit the app?</string>
+
+    <string name="no_saved_evaluations">There is not saved evaluations.</string>
+</resources>

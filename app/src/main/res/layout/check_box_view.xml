@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="#fff"
+    android:minHeight="@dimen/checkbox_cell_height"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/checkbox_cell_height"
+        android:orientation="horizontal"
+
+        android:paddingEnd="@dimen/cell_padding_right"
+        android:paddingStart="@dimen/cell_padding_left">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/clickable_icon_width"
+            android:layout_height="@dimen/clickable_icon_height"
+            android:button="@drawable/custom_checkbox"
+            android:padding="@dimen/clickable_icon_padding" />
+
+        <com.szg_tech.hearthfailure.core.views.CustomTextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/checkbox_cell_padding_bottom"
+            android:paddingTop="@dimen/checkbox_cell_padding_top"
+            app:type="body_placeholder" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

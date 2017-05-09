@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/icon_cell_height"
+    android:orientation="horizontal"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/icon_cell_padding_bottom"
+        android:paddingEnd="@dimen/cell_padding_right"
+        android:paddingStart="@dimen/cell_padding_left"
+        android:paddingTop="@dimen/icon_cell_padding_top">
+
+        <RelativeLayout
+            android:id="@+id/state_icon_layout"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/lock_icon" />
+
+            <ImageView
+                android:id="@+id/viewed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/viewed" />
+
+            <ImageView
+                android:id="@+id/filled"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/filled" />
+        </RelativeLayout>
+
+        <com.szg_tech.hearthfailure.core.views.CustomTextView
+            android:id="@+id/section_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:type="body_placeholder" />
+
+        <ImageView
+            android:id="@+id/chevron_fwd"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginStart="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chevron_fwd" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

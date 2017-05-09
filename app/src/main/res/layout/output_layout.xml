@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.szg_tech.hearthfailure.core.views.ButtonWithChevron
+        android:id="@+id/return_to_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        app:chevron_img="@drawable/chevron_fwd"
+        app:text="@string/return_to_the_evaluation_list_to_make_edits"
+        app:text_color="@color/grey_text" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.szg_tech.hearthfailure.core.views.CustomTextView
+        android:id="@+id/complete_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_cell_height"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="@string/complete_evaluation"
+        android:textColor="@color/green_text"
+        app:type="body_link" />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="19dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="19dp"
+    android:minHeight="176dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="17dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.szg_tech.hearthfailure.core.views.CustomTextView
+                    android:id="@+id/ico_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:type="title_left" />
+
+                <ImageView
+                    android:id="@+id/context_menu_button"
+                    android:layout_width="12dp"
+                    android:layout_height="@dimen/icon_height"
+                    android:src="@drawable/more_vertical" />
+            </LinearLayout>
+
+            <com.szg_tech.hearthfailure.core.views.CustomTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <com.szg_tech.hearthfailure.core.views.CustomTextView
+                    android:id="@+id/blue_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blue_round_item"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    app:type="tag" />
+
+                <com.szg_tech.hearthfailure.core.views.CustomTextView
+                    android:id="@+id/green_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/green_round_item"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    app:type="tag" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/view_more_information_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_cell_height"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:src="@drawable/arrow_fwd" />
+
+        <com.szg_tech.hearthfailure.core.views.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="17dp"
+            android:gravity="center_vertical"
+            android:text="@string/view_more_information_browser" />
+    </LinearLayout>
+</LinearLayout>

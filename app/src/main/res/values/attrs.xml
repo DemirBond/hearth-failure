@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="type">
+        <enum name="title_center" value="0" />
+        <enum name="title_left" value="1" />
+        <enum name="subheading_section" value="2" />
+        <enum name="subheading" value="3" />
+        <enum name="subheading_left" value="4" />
+        <enum name="button_dark" value="5" />
+        <enum name="body_link" value="6" />
+        <enum name="body_placeholder" value="7" />
+        <enum name="tag" value="8" />
+        <enum name="body2" value="9" />
+        <enum name="input_right" value="10" />
+    </attr>
+    <declare-styleable name="CustomTextView">
+        <attr name="type" />
+        <attr name="android:textColor" />
+    </declare-styleable>
+    <declare-styleable name="CustomEditText">
+        <attr name="type" />
+    </declare-styleable>
+    <declare-styleable name="ButtonWithChevron">
+        <attr name="text" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="chevron_img" format="reference" />
+    </declare-styleable>
+</resources>

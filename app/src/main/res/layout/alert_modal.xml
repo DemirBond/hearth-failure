@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/alert_modal_width"
+    android:layout_height="@dimen/alert_modal_height"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/alert_modal_padding_bottom"
+    android:paddingTop="@dimen/alert_modal_padding_top">
+
+    <com.szg_tech.hearthfailure.core.views.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:type="title_center" />
+
+    <com.szg_tech.hearthfailure.core.views.CustomTextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        app:type="subheading" />
+
+    <com.szg_tech.hearthfailure.core.views.CustomTextView
+        android:id="@+id/cta_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/red_button_selector"
+        android:gravity="center"
+        android:minHeight="44dp"
+        app:type="tag" />
+
+    <com.szg_tech.hearthfailure.core.views.CustomTextView
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minHeight="44dp"
+        app:type="button_dark" />
+</LinearLayout>

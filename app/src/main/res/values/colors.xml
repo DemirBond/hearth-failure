@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#00000000</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="pale_lavender">#f3edff</color>
+    <color name="pale_lavender_dark">#e3ddee</color>
+    <color name="section_bg_highlight">#eae4fc</color>
+    <color name="lighter_purple">#9765f8</color>
+    <color name="unselected_tab_text_color">#c4a7fb</color>
+    <color name="salmon">#ff7878</color>
+    <color name="dark_cream">#feec9e</color>
+    <color name="hospital_green">#9ce2a5</color>
+    <color name="hospital_green_status">#94d29c</color>
+    <color name="grapefruit">#ff5959</color>
+    <color name="tomato">#e93f3f</color>
+    <color name="white">#fafafa</color>
+    <color name="grey_text">#9b9b9b</color>
+    <color name="green_text">#86d190</color>
+    <color name="powder_blue">#bad7ff</color>
+    <color name="light_gold">#fedf5e</color>
+    <color name="snackbar_red">#ff5a5a</color>
+    <color name="red_button_active">#ff4f50</color>
+    <color name="red_button_pressed">#fc7c7d</color>
+    <color name="blue_button_active">#8c5bf7</color>
+    <color name="blue_button_pressed">#aa85f6</color>
+</resources>

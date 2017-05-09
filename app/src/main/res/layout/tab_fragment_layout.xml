@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/pale_lavender"
+        app:tabIndicatorColor="@color/lighter_purple"
+        app:tabSelectedTextColor="@color/lighter_purple"
+        app:tabTextColor="@color/unselected_tab_text_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.szg_tech.hearthfailure.core.views.ButtonWithChevron
+        android:id="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_cell_height"
+        android:elevation="5dp"
+        app:text="@string/compute_evaluation" />
+</LinearLayout>
