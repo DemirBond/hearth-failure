@@ -22,18 +22,15 @@ public class Evaluation extends SectionEvaluationItem {
         return new ArrayList<EvaluationItem>() {
             {
                 add(new Bio(context));
-                add(new Symptoms(context));
-                add(new ReviewOfSystems(context));
-                add(new PhysicalExam(context));
-                add(new CurrentCVProfile(context));
+                add(new HeartFailure(context));
+                add(new CoroaryHeartDisease(context));
+                add(new AtrialFibrillation(context));
+                add(new ThromboembolicCVA(context));
+                add(new BradyarrthymiasSyncope(context));
+                add(new VentricularTachyarrthymias(context));
                 add(new MajorCVRisk(context));
                 add(new Laboratories(context));
                 add(new Diagnostics(context));
-                add(new SectionEvaluationItem(context, ConfigurationParams.CURRENT_THERAPIES, context.getString(R.string.current_therapies), false, new ArrayList<EvaluationItem>() {{
-                    add(new POMeds(context));
-                    add(new InHospitalTherapies(context));
-                }}, SectionElementState.LOCKED, ConfigurationParams.BIO));
-                add(new NonCardiacSurgicalRisk(context));
             }
         };
     }

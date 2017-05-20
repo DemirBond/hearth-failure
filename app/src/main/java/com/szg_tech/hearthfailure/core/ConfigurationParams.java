@@ -27,7 +27,6 @@ public class ConfigurationParams {
 
     public static final String SYNCHEST_PAIN = "chkSynProCP";
     public static final String SYNCOPE_PRESYNCOPE = "chkTestSyncope";
-    public static final String CHEST_PAIN = "sectionCP";
     public static final String CURRENT_PAST_CV_PROFILE = "seccurrent_past_cv_profile";
     public static final String HEART_FAILURE = "chkHF";
     public static final String CORONARY_HEART_DISEASE = "seccoronary_heart_disease";
@@ -80,7 +79,6 @@ public class ConfigurationParams {
     public static final String DAY5 = "chkD5";
     public static final String DAY6 = "chkD6";
     public static final String PLEASE_SELECT_ONE = "secplease_select_one";
-    public static final String CHRONIC_HF = "chkHFPLVF";
     public static final String NEW_HF = "chknewHF";
     public static final String DYSPNEA_ON_EXERTION = "chkDOE";
     public static final String STRENUOUS_EXERTION = "chkclass1";
@@ -90,6 +88,15 @@ public class ConfigurationParams {
     public static final String WEIGHT_GAIN = "chkWeight";
     public static final String PREVIOUS_HF_HOSPITALIZATION = "chkfoutpt";
     public static final String S_P_ICD = "chkICD";
+    public static final String S_P_BiV_PPM = "chkCRTI";
+    public static final String S_P_PPM_RV_LEAD_ONLY = "chkPPM";
+    public static final String NEW_ON_SET_INITIAL_EVALUATION = "ChknewHF";
+    public static final String CHRONIC_HF = "Chkchronic";
+    public static final String ONE_OR_MORE_HF_ADMISSION = "ChKHFPLVF";
+    public static final String TWO_UNSCHEDULED_VISITS = "chkfoutpt";
+    public static final String CHEST_PAIN = "chkTA";
+
+    public static final String CHANGE_IT = "secnyha_class";
 
     public static final String NYHA_CLASS = "secnyha_class";
     public static final String AT_HIGH_RISK = "chkA";
