@@ -787,7 +787,7 @@ public class ConfigurationParams {
     public static final String PADP_MMHG = "txtPADP";
     public static final String RVEDP_MMGH = "txtRVEDP";
     public static final String SIX_MW_DISTANCE = "txt6MWT";
-    public static final String MAX_VO_MG_KG_MIN = "txtVO2";
+    public static final String MAX_VO_MG_KG_MIN = "TxtVO2";
 
     public static final String ON_SET_HEART_FAILURE_MONTH = "txtHearthFailureMonth";
     public static final String ON_SET_HEART_FAILURE_YEAR = "txtHearthFailureYear";
