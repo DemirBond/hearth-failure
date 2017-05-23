@@ -25,13 +25,13 @@ public interface ApiService {
      * Therefore, in this query is joined
      *
      */
-    @GET("/api/api/values")
+    @GET("/api/values")
     public Call<EvaluationResponse> computeOrSaveEvaluation(@QueryMap(encoded = true) Map<String, Object> options);
 
 
-    @GET("/api/api/values")
+    @GET("/api/values")
     public Call<SavedEvaluationSummaryResponse> retrieveSavedEvaluations();
 
-    @GET("/api/api/values")
+    @GET("/api/values")
     public Call<SavedEvaluationResponse> retrieveEvaluationByID(@Query("ID") int id);
 }

@@ -18,6 +18,6 @@ public interface AuthenticationService {
 
 
     @Headers("Content-Type: application/x-www-form-urlencoded")
-    @POST("api/account/register")
+    @POST("account/register")
     Call<Void> register(@Body String registerBody);
 }

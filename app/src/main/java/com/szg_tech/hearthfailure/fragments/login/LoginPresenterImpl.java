@@ -49,7 +49,8 @@ public class LoginPresenterImpl extends AbstractPresenter<LoginView> implements 
             LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
             recyclerView.setLayoutManager(layoutManager);
             recyclerView.setAdapter(new LoginPresenterImpl.RecyclerViewAdapter(activity));
-            ((AuthenticationActivity)activity).onLoginSucceed();
+//            ((AuthenticationActivity)activity).onLoginSucceed();
+            tryLogin("demo", "demo1");
         }
         checkCredentials();
     }

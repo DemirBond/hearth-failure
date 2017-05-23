@@ -14,7 +14,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class AuthenticationClient {
 
-    private static final String BASE_URL = "http://www.hearthfailure.com/api/";
+    private static final String BASE_URL = "http://api.calchfrisk.net/";
     private AuthenticationService authenticationService;
 
     public AuthenticationClient() {
