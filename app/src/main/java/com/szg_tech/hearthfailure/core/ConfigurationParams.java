@@ -11,12 +11,12 @@ public class ConfigurationParams {
     public static final String MALE = "male";
     public static final String FEMALE = "female";
     public static final String BMI = "txtBMI";
-    public static final String WEIGHT = "weight";
-    public static final String HEART_RATE = "HR";
-    public static final String SBP = "txtsbp";
-    public static final String DBP = "txtdbp";
+    public static final String WEIGHT = "txtweight";
+    public static final String HEART_RATE = "txtHR";
+    public static final String SBP = "txtSBP";
+    public static final String DBP = "txtDBP";
     public static final String IS_PAH = "isPAH";
-    public static final String ORTHOSTATIC_SBP = "OrthostaticSBP";
+    public static final String ORTHOSTATIC_SBP = "txtOrthostaticSBP";
     public static final String ORTHOSTATIC_SYMPTOMPS = "chkSymptomatic";
     public static final String WAIST_CIRC = "txtwaist";
     public static final String AA = "chkAsianCode";
@@ -47,7 +47,7 @@ public class ConfigurationParams {
     public static final String DIAGNOSTICS = "secdiagnostics";
     public static final String PO_MEDS = "secpo_meds";
     public static final String REVIEW_OF_SYSTEMS = "secreview_of_systems";
-    public static final String WEIGHT_CHANGE = "chkweightchange";
+    public static final String WEIGHT_CHANGE = "chkWeight";
 
     public static final String PREVIOUS_DVT_PE = "chkPVTE";
     public static final String PREVIOUS_DVTE = "chkDVTE";
@@ -168,7 +168,7 @@ public class ConfigurationParams {
     public static final String SYNCOPE_DURATION_DURING_SYNCOPE = "secsyncope_duration_during_syncope";
     public static final String MINUTES_SYN_DUR = "txtSynMin";               // This is not in code yet, probably should
     public static final String SECONDS_SYN_DUR = "txtSynSec";               // This is not in code yet, probably should
-    public static final String CYANOSIS = "chkSynNone";
+
     public static final String PALLOR_DIAPHORESIS = "chkSynpallor";
     public static final String UNUSUAL_POSTURE = "chkSynposture";
     public static final String POSTICTAL_SYMPTOMS = "secpostictal_symptoms";
@@ -226,10 +226,11 @@ public class ConfigurationParams {
     public static final String PULMONARY_EDEMA = "chkPEd";
     public static final String DIMINISHED_BREATH_SOUNDS = "chkbreath";
     public static final String ABDOMINAL_TENDERNESS = "chkabdominal";
-    public static final String HJR = "chkHJR";
+    public static final String HJR = "chkhepato";
     public static final String ASCITES = "chkascites";
     public static final String ANY_CNS_SYMPTOMS = "chkAMS";
     public static final String COLD_CLAMMY_EXTERMITIES = "chkshock";
+    public static final String CYANOSIS = "chkcyanosis";
     public static final String EDEMA = "chkedema";
     public static final String DIFFERENCE_IN_SBP = "txtDiffInSBP";
     public static final String CURRENT_THERAPIES = "seccurrent_therapies";
@@ -474,7 +475,10 @@ public class ConfigurationParams {
     public static final String LV_ANEURYSM = "chkLVaneurysm";
     public static final String ISCHEMIC_POST_MI_LESS_45 = "chkIschemic";
     public static final String CARDIOTOXINS = "chkCardiotoxins";
+    public static final String XRT = "chkXRT";
+    public static final String ANTRACYCLINES = "chkantracyclines";
     public static final String FAMILIAL_CMP = "chkFamHXofCMP";
+
     public static final String LVH_MORE_30 = "chkLVHGreater30";
     public static final String ABNORMAL_BP_RESPONSE_TO_EXERCISE = "chkAbnormBP";
     public static final String HISTORY_OF_SUDDEN_DEATH = "chkFamHistSuddenDeath";
