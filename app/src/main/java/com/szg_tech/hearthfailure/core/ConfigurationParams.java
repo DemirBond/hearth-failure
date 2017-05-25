@@ -78,6 +78,10 @@ public class ConfigurationParams {
     public static final String DAY4 = "chkD4";
     public static final String DAY5 = "chkD5";
     public static final String DAY6 = "chkD6";
+
+    public static final String CLINICAL_PRESENTATION = "secclinical_presentation";
+
+
     public static final String PLEASE_SELECT_ONE = "secplease_select_one";
     public static final String NEW_HF = "chknewHF";
     public static final String DYSPNEA_ON_EXERTION = "chkDOE";
@@ -96,7 +100,10 @@ public class ConfigurationParams {
     public static final String TWO_UNSCHEDULED_VISITS = "chkfoutpt";
     public static final String CHEST_PAIN = "chkTA";
 
-    public static final String CHANGE_IT = "secnyha_class";
+    public static final String DISCHARGE_THERAPEUTICS = "secdischarge_therapeutics";
+    public static final String AHA_STAGE = "secaha_stage";
+    public static final String ACUTELY_DECOMPENSATED_OR_HOSPITALIZED = "secacutely_decompensated_hospitalized";
+    public static final String VO2SAT = "txtVO2sat";
 
     public static final String NYHA_CLASS = "secnyha_class";
     public static final String AT_HIGH_RISK = "chkA";
@@ -277,6 +284,7 @@ public class ConfigurationParams {
     public static final String RETINOPATHY = "chkRetinopathy";
     public static final String TOBACCO_USE = "chkSmoke";
     public static final String FAMILY_HISTORY = "chkFamily";
+    public static final String HISTORY = "sechistory";
     public static final String CKD = "chkckd";
     public static final String SYSTEMIC_ARTERIAL_HYPERTENSION = "chkSAH";
     public static final String AMB_SBP = "ASBP";
@@ -369,6 +377,25 @@ public class ConfigurationParams {
     public static final String METOPROLOLER_150_QD = "chkBisoprolol10";
     public static final String METOPROLOLER_200_QD = "chkMetoprololER200";
     public static final String ACEL_ARB = "chkace";
+
+    public static final String ENALAPRIL5 = "chkenalapril5";
+    public static final String ENALAPRIL10 = "chkenalapril10";
+    public static final String RAMIPRIL25 = "chkramipril25";
+    public static final String RAMIPRIL5 = "chkramipril5";
+    public static final String LISINOPIRIL5 = "chklisinopril5";
+    public static final String LISINOPIRIL10= "chklisinopril10";
+    public static final String LOSARTAN25 = "chklosartan25";
+    public static final String LOSARTAN50 = "chklosartan50";
+    public static final String OLMESARTAN10 = "chkolmesartan10";
+    public static final String OLMESARTAN20 = "chkolmesartan20";
+    public static final String VALSARTAN80 = "chkvalsartan80";
+    public static final String VALSARTAN160 = "chkvalsartan160";
+    public static final String SACIBITRIL24 = "chksacibitril24";
+    public static final String SACIBITRIL49 = "chksacibitril49";
+    public static final String SACIBITRIL97 = "chksacibitril97";
+
+
+
     public static final String PO_DIURETIC = "chkdiuretic";
     public static final String HCTZ = "chkHCTZ";
     public static final String INDAPAMIDE = "chkindapamide";
@@ -747,6 +774,11 @@ public class ConfigurationParams {
     public static final String LOW_RISK_CATARACT_PLASTIC = "chklowriskelec";
     public static final String OTHER_CARDIAC = "chkcardiac";
     public static final String ADVANCED_LHF = "secadvanced_lhf";
+    public static final String ADVANCED_HF = "secadvanced_hf";
+
+    public static final String CCB= "chkCCB";
+    public static final String HYDRALAZINE_NITRATE = "chkvasodilator";
+
     public static final String HEART_FAILURE_DURATION = "secheart_failure_duration";
     public static final String HEART_FAILURE_DURATION_WEEK = "txtdur";
     public static final String HFPLVF = "chkHFPLVF";

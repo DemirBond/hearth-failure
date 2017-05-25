@@ -62,6 +62,7 @@
     <string name="not_now">NOT NOW</string>
     <string name="dyspnea">Dyspnea</string>
     <string name="chest_pain">Chest Pain</string>
+    <string name="etiology">Etiology</string>
     <string name="syncope_presyncope">Syncope/Presyncope</string>
     <string name="heart_failure">Heart Failure</string>
     <string name="coronary_heart_disease">Coronary Heart Disease</string>
@@ -77,14 +78,17 @@
     <string name="outpatient">Outpatient</string>
     <string name="emergency_room">Emergency Room</string>
     <string name="in_hospital">In Hospital</string>
+    <string name="acutely_decompensated_hospitalized">Acutely Decompensated / Hospitalized</string>
     <string name="day1">Day 1</string>
     <string name="day2">Day 2</string>
     <string name="day3">Day 3</string>
     <string name="day4">Day 4</string>
     <string name="day5">Day 5</string>
     <string name="day6">Day 6</string>
+    <string name="pre_discharge_or_discharge_day">Pre-discharge or Discharge Day</string>
+    <string name="discharge_therapeutics">Discharge Therapeutics</string>
+    <string name="clinical_presentation">Clinical Presentation</string>
     <string name="please_select_one">Please Select One</string>
-    <string name="chronic_hf">Chronic HF with Known Etiology</string>
     <string name="new_hf">New Onset/Suspected HF</string>
     <string name="dyspnea_on_exertion">Dyspnea on Exertion, not at Rest</string>
     <string name="strenuous_exertion">Strenuous Exertion</string>
@@ -92,6 +96,7 @@
     <string name="daily_routine_minimal_activities">Daily Routine / Minimal Activities</string>
     <string name="dyspnea_at_rest">Dyspnea at Rest/Orthopnea</string>
     <string name="weight_gain">Weight Gain</string>
+    <string name="beta_blocker">Beta Blocker</string>
     <string name="previous_hf_hospitalization">Previous HF Hospitalization</string>
     <string name="s_p_icd">S/P ICD</string>
     <string name="nyha_class">NYHA Class</string>
@@ -148,6 +153,7 @@
     <string name="palpitations">Palpitations</string>
     <string name="syncope_duration_during_syncope">Syncope Duration/During Syncope</string>
     <string name="cyanosis">Cyanosis</string>
+    <string name="aha_stage">AHA Stage</string>
     <string name="pallor_diaphoresis">Pallor, Diaphoresis</string>
     <string name="unusual_posture">Unusual Posture</string>
     <string name="postictal_symptoms">Postictal Symptoms</string>
@@ -169,8 +175,11 @@
     <string name="diminished_breath_sounds">Diminished Breath Sounds</string>
     <string name="abdominal_tenderness">Abdominal Tenderness</string>
     <string name="any_cns_symptoms">Any CNS Symptoms</string>
+    <string name="cold_clammy_extremities">Cold Clammy Extremities</string>
     <string name="cold_clammy_extermities">Cold Clammy Extermities</string>
     <string name="edema">Edema</string>
+    <string name="edema_ascites">Edema/Ascites</string>
+    <string name="left_sided_gallop">Left Sided Gallop</string>
     <string name="difference_in_sbp">Difference in SBP</string>
     <string name="focus_on_the_most_abnormal_auscultation_foci">Focus on the most abnormal auscultation foci</string>
     <string name="si_mitral">SI Mitral</string>
@@ -202,9 +211,31 @@
     <string name="minutes">Minutes</string>
     <string name="seconds">Seconds</string>
     <string name="duration">Duration</string>
+    <string name="duration_week">Duration / week</string>
+    <string name="one_or_more_hf_addmissions">One or More HF Admissions in 12 Months</string>
+    <string name="two_unscheduled_visits">Two Unscheduled Visits (eg. ED or Clinic) in 12 Months</string>
     <string name="vo_max_kg">VO max kg</string>
     <string name="no_significant_comorbidities">No Significant Comorbidities</string>
     <string name="calculate_hfss">Calculate HFSS, enter NAmeq, VO₂ max, Heart Rate, and ECG QRS Duration</string>
+
+    <string name="enalapril5">Enalapril&lt;=10</string>
+    <string name="enalapril10">Enalapril&gt;10</string>
+    <string name="ramipril25">Ramipril&lt;=5</string>
+    <string name="ramipril5">Ramipril&gt;5</string>
+    <string name="lisinopiril5">Lisinopril&lt;=10</string>
+    <string name="lisinopiril10">Lisinopril&gt;10</string>
+    <string name="losartan25">Losartan&lt;=50</string>
+    <string name="losartan50">Losartan&gt;50</string>
+    <string name="olmesartan10">Olmesartan&lt;=10</string>
+    <string name="olmesartan20">Olmesartan&gt;10</string>
+    <string name="valsartan80">Valsartan&lt;=160</string>
+    <string name="valsartan160">Valsartan&gt;160</string>
+    <string name="sacibitril24">Sacubitril/Val 24</string>
+    <string name="sacibitril49">Sacubitril/Val 49</string>
+    <string name="sacibitril97">Sacubitril/Val 97</string>
+
+
+
     <string name="escalating_in_frequency">Escalating in Frequency, Duration or Severity</string>
     <string name="diabetes">Diabetes</string>
     <string name="type_1_dm">Type I DM</string>
@@ -232,6 +263,8 @@
     <string name="chem_basic">Chem Basic</string>
     <string name="na_meq_l">Na meq/l</string>
     <string name="urine_na_meq_l">Urine Na meq/l</string>
+    <string name="low_urine_output">Low Urine Output &lt; 30ml/hr</string>
+    <string name="any_cns_ymptoms">Any CNS Symptoms</string>
     <string name="serum_osmolality">Serum Osmolality</string>
     <string name="urine_osmolality">Urine Osmolality</string>
     <string name="k_meq_l">K meq/l</string>
@@ -275,6 +308,7 @@
     <string name="mechanical_ventiallation_or_nippv">Mechanical Ventiallation or NIPPV</string>
     <string name="respiratory_interventions_q_hr">Respiratory Interventions Q hr</string>
     <string name="o2_supplement">O2 Supplement % /</string>
+    <string name="cv_svo2_sat">CV/ SVO2sat%</string>
     <string name="four_vasopressors">IV Vasopressors</string>
     <string name="ultrafiltration">Ultrafiltration</string>
     <string name="iabp">IABP</string>
@@ -385,6 +419,8 @@
     <string name="lv_aneurysm">LV Aneurysm</string>
     <string name="ischemic_post_mi_less_45"><![CDATA[Ischemic Post MI < 45 Day]]></string>
     <string name="cardiotoxins">Cardiotoxins</string>
+    <string name="xrt">XRT</string>
+    <string name="antracyclines">Antracyclines</string>
     <string name="familial_cmp">Familial CMP Associated with Sudden Death</string>
     <string name="lvh_more_30">LVH ≥ 30mm</string>
     <string name="abnormal_bp_response_to_exercise">Abnormal BP Response to Exercise</string>
@@ -441,7 +477,8 @@
     <string name="liver_disease">Liver Disease</string>
     <string name="previous_tia_cva">Previous TIA/CVA</string>
     <string name="thyrotoxicosis">Thyrotoxicosis</string>
-    <string name="thromboembolic_prevention_vka_therapy">Thromboembolic Prevention\nThromboembolic Therapy\nVKA (Warfarin) Therapy\nPeriprocedural Anticoagulation</string>
+    <!--<string name="thromboembolic_prevention_vka_therapy">Thromboembolic Prevention\nThromboembolic Therapy\nVKA (Warfarin) Therapy\nPeriprocedural Anticoagulation</string>-->
+    <string name="thromboembolic_prevention_vka_therapy">Thromboembolic Prevention</string>
     <string name="inr">INR</string>
     <string name="patient_bleed_risk">Patient Bleed Risk</string>
     <string name="procedural_bleed_risk">Procedural Bleed Risk</string>
@@ -561,6 +598,12 @@
     <string name="pots">POTS (Enter Standing Heart Rate Above)</string>
     <string name="autonomic_failure_syndrome">Autonomic Failure Syndrome</string>
     <string name="history_of_cardiac_arrest">History of Cardiac Arrest</string>
+    <string name="history">History</string>
+    <string name="status_post_aicd">Status post AICD</string>
+    <string name="sp_biv_ppm">S/P BiV PPM</string>
+    <string name="sp_ppm_rv_lead_only">S/P PPM with RV Lead Only</string>
+    <string name="new_onset_hf_initial_evaluation">New onset HF/initial evaluation</string>
+    <string name="chronic_hf">"Chronic HF</string>
     <string name="brugada_syndrome">Brugada Syndrome</string>
     <string name="long_qt">LongQT</string>
     <string name="sarcoidosis_giant_cell_chagas">Sarcoidosis / Giant Cell / Chagas</string>
@@ -582,9 +625,12 @@
     <string name="duke_activity_score_index">Duke Activity Score Index</string>
     <string name="associated_with">Associated With</string>
     <string name="weight_hint">Enter weight in kilos</string>
+    <string name="enter_bmi_value">Enter BMI Value</string>
+    <string name="bmi">BMI</string>
     <string name="heart_rate_hint">Enter the Heart Rate</string>
     <string name="sbp_hint">Enter SBP value</string>
     <string name="dbp_hint">Enter DBP value</string>
+    <string name="orthostatic_sbp">Orthostatic SBP</string>
     <string name="torsades">Torsades</string>
     <string name="last_thromboembolic_event_months_ago">Last Thromboembolic Event (month ago)</string>
     <string name="duration_hours">Duration/Hours</string>
@@ -593,11 +639,11 @@
     <string name="positive_troponin">Positive Troponin</string>
     <string name="troponin_x_more_3_above_normal">Troponin X ≥ 3 Above Normal</string>
     <string name="troponin_1_3_above_normal">Troponin X 1–3 Above Normal</string>
-    <string name="orthostatic_sbp">Orthostatic SBP</string>
     <string name="orthostatic_symptomps">Orthostatic Symptoms</string>
     <string name="waist_circ">Waist Circ.</string>
     <string name="aa">AA</string>
     <string name="pregnancy">Pregnancy</string>
+    <string name="ra_o2_sat">RA O2 sat</string>
     <string name="o2sat">O2sat%</string>
     <string name="acutely_symptomatic">Acutely Symptomatic</string>
     <string name="page">PAGE&#160;</string>
@@ -690,6 +736,7 @@
     <string name="low_risk_cataract_plastic">Low Risk (Cataract, Plastic)</string>
     <string name="other_cardiac">Other Cardiac</string>
     <string name="advanced_lhf">Advanced LHF</string>
+    <string name="advanced_hf">Advanced HF</string>
     <string name="heart_failure_duration">Heart Failure Duration</string>
     <string name="heart_failure_duration_week">Heart Failure Duration/Week</string>
     <string name="hfplvf">HFPLVF</string>
