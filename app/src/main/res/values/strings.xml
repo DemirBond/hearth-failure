@@ -550,7 +550,7 @@
     <string name="idiopathic_vt">Idiopathic VT</string>
     <string name="symptomatic_carotid_disease">Symptomatic Carotid Disease</string>
     <string name="noncardioembolic_vca_tia">Noncardioembolic VCA/TIA Associated with Carotid Plaque</string>
-    <string name="more_50_carotid_stenosis">≥ 50% Carotid Stenosis/ S/P CEA</string>
+    <string name="more_50_carotid_stenosis">≥ 50 Carotid Stenosis/ S/P CEA</string>
     <string name="peripheric_vascular_disease">Peripheric Vascular Disease</string>
     <string name="abi_less_09"><![CDATA[ABI < 0.9]]></string>
     <string name="claudication">Claudication</string>

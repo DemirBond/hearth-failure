@@ -27,26 +27,26 @@ public class ThromboembolicCVA extends SectionEvaluationItem {
     private ArrayList<EvaluationItem> createEvaluationItemElementsList() {
         return new ArrayList<EvaluationItem>() {
             {
-                add(new NumericalEvaluationItem(context, ConfigurationParams.INR, context.getString(R.string.inr), context.getString(R.string.value), 0.5, 100, false));
-                add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.PATIENT_BLEED_RISK, "Patient related bleeding risk", false, new ArrayList<EvaluationItem>() {
+
+                //add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.PATIENT_BLEED_RISK, "Patient related bleeding risk", false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.ACTIVE_GASTRODUODENAL_ULCER, context.getString(R.string.active_gastroduodenal_ulcer), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.BLEED_IN_3_MO_BEFORE_ADMISSION, context.getString(R.string.bleed_in_3_mo_before_admission), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.PLATELET_COUNT_LESS_50, context.getString(R.string.platelet_count_less_50), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.ICU_OR_CCU_ADMISSION, context.getString(R.string.icu_or_ccu_admission), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CENTRAL_VENOUS_CATHETER, context.getString(R.string.central_venous_catheter), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.ACTIVE_GASTRODUODENAL_ULCER, context.getString(R.string.active_gastroduodenal_ulcer), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.BLEED_IN_3_MO_BEFORE_ADMISSION, context.getString(R.string.bleed_in_3_mo_before_admission), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.PLATELET_COUNT_LESS_50, context.getString(R.string.platelet_count_less_50), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.ICU_OR_CCU_ADMISSION, context.getString(R.string.icu_or_ccu_admission), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.CENTRAL_VENOUS_CATHETER, context.getString(R.string.central_venous_catheter), false));
 
                     }
-                }));
-                add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.PROCEDURAL_BLEED_RISK, "Procedur related bleeding risk", false, new ArrayList<EvaluationItem>() {
+                //}));
+                //add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.PROCEDURAL_BLEED_RISK, "Procedur related bleeding risk", false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.PRIOR_BLEED_DURING_BRIDGING_SIMILAR, context.getString(R.string.prior_bleed_during_bridging_similar), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.PRIOR_ASA_USE, context.getString(R.string.prior_asa_use), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.RISK_NOT_CLINICALLY_IMPORTANT_LOW, context.getString(R.string.risk_not_clinically_important_low), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.RISK_UNCERTAIN, context.getString(R.string.risk_uncertain), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.RISK_INTERMEDIATE_HIGH, context.getString(R.string.risk_intermediate_high), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.PRIOR_BLEED_DURING_BRIDGING_SIMILAR, context.getString(R.string.prior_bleed_during_bridging_similar), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.PRIOR_ASA_USE, context.getString(R.string.prior_asa_use), false));
+                       //add(new BooleanEvaluationItem(context, ConfigurationParams.RISK_NOT_CLINICALLY_IMPORTANT_LOW, context.getString(R.string.risk_not_clinically_important_low), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.RISK_UNCERTAIN, context.getString(R.string.risk_uncertain), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.RISK_INTERMEDIATE_HIGH, context.getString(R.string.risk_intermediate_high), false));
                     }
-                }));
+                //}));
                 add(new BooleanEvaluationItem(context, ConfigurationParams.DEEP_VENOUS_THROMBOSIS, context.getString(R.string.deep_venous_thrombosis), false));
                 add(new BooleanEvaluationItem(context, ConfigurationParams.PULMONARY_EMBOLISM, context.getString(R.string.pulmonary_embolism), false));
                 add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.DVY_PE_DIAGNOSIS_PREVENTION, "DVT diagnosis, prevention", false, new ArrayList<EvaluationItem>() {

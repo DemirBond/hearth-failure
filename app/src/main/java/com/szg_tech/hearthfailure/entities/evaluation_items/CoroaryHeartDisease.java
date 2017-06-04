@@ -33,7 +33,6 @@ public class CoroaryHeartDisease extends SectionEvaluationItem {
                         add(new BooleanEvaluationItem(context, ConfigurationParams.MORE_2_ANGINA_24HR, context.getString(R.string.more_2_angina_24hr), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.ANGINA_MORE_20MIN, context.getString(R.string.angina_more_20min), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.ASA_ACS, context.getString(R.string.asa_use_in_past_1_week), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.POSITIVE_TROP_I_OR_T, context.getString(R.string.positive_trop_i_or_t), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.MORE_2_ANTANGINAL, context.getString(R.string.more_2_antanginal), false));
                         add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.STEMI, context.getString(R.string.stemi), false, new ArrayList<EvaluationItem>() {
                             {
@@ -71,18 +70,18 @@ public class CoroaryHeartDisease extends SectionEvaluationItem {
                 }));
                 add(new BooleanEvaluationItem(context, ConfigurationParams.LM, context.getString(R.string.lm), false));
                 add(new BooleanEvaluationItem(context, ConfigurationParams.LAD, context.getString(R.string.lad), false));
-                add(new BooleanEvaluationItem(context, ConfigurationParams.RCA, context.getString(R.string.rca), false));
-                add(new BooleanEvaluationItem(context, ConfigurationParams.LCX, context.getString(R.string.lcx), false));
-                add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.ICD_10, context.getString(R.string.icd_10), false, new ArrayList<EvaluationItem>() {
+                //add(new BooleanEvaluationItem(context, ConfigurationParams.RCA, context.getString(R.string.rca), false));
+                //add(new BooleanEvaluationItem(context, ConfigurationParams.LCX, context.getString(R.string.lcx), false));
+                //add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.ICD_10, context.getString(R.string.icd_10), false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_TOTAL_OCCLUSION, context.getString(R.string.chronic_total_occlusion), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CORONARY_ANEURYSM, context.getString(R.string.coronary_aneurysm), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CORONARY_DISSECTION, context.getString(R.string.coronary_dissection), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CALCIFIED_CORONARY_LESION, context.getString(R.string.calcified_coronary_lesion), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.LIPID_RICH_PLAQUE, context.getString(R.string.lipid_rich_plaque), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.DOCUMENTED_VASOSPASM, context.getString(R.string.documented_vasospasm), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_TOTAL_OCCLUSION, context.getString(R.string.chronic_total_occlusion), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.CORONARY_ANEURYSM, context.getString(R.string.coronary_aneurysm), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.CORONARY_DISSECTION, context.getString(R.string.coronary_dissection), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.CALCIFIED_CORONARY_LESION, context.getString(R.string.calcified_coronary_lesion), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.LIPID_RICH_PLAQUE, context.getString(R.string.lipid_rich_plaque), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.DOCUMENTED_VASOSPASM, context.getString(R.string.documented_vasospasm), false));
                     }
-                }));
+                //}));
                 add(new NumericalEvaluationItem(context, ConfigurationParams.VESSEL_MORE_50, context.getString(R.string.vessel_more_50), context.getString(R.string.value), 1, 3, false, true));
                 add(new NumericalEvaluationItem(context, ConfigurationParams.LVEF_CHD, context.getString(R.string.lvef), context.getString(R.string.value), 10, 80, false, true));
             }

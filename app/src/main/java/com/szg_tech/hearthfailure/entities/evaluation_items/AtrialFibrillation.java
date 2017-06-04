@@ -31,19 +31,19 @@ public class AtrialFibrillation extends SectionEvaluationItem {
     private ArrayList<EvaluationItem> createEvaluationItemElementsList() {
         return new ArrayList<EvaluationItem>() {
             {
-                add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_AF, context.getString(R.string.chronic_af), false));
-                add(new BooleanEvaluationItem(context, ConfigurationParams.PERSISTENT_AF, context.getString(R.string.persistent_af), false));
-                add(new BooleanEvaluationItem(context, ConfigurationParams.PAROXYMAL_AF, context.getString(R.string.paroxymal_af), false));
-                add(new BooleanEvaluationItem(context, ConfigurationParams.S_P_SUCCESSFUL_ABLATION, context.getString(R.string.s_p_successful_ablation), false));
+                //add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_AF, context.getString(R.string.chronic_af), false));
+                //add(new BooleanEvaluationItem(context, ConfigurationParams.PERSISTENT_AF, context.getString(R.string.persistent_af), false));
+                //add(new BooleanEvaluationItem(context, ConfigurationParams.PAROXYMAL_AF, context.getString(R.string.paroxymal_af), false));
+                //add(new BooleanEvaluationItem(context, ConfigurationParams.S_P_SUCCESSFUL_ABLATION, context.getString(R.string.s_p_successful_ablation), false));
                 add(new BoldEvaluationItem(context, ConfigurationParams.PLEASE_SELECT_ONE, context.getString(R.string.please_select_one), false));
                 add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.RHYTM_CONTROL, context.getString(R.string.rhytm_control), "radio_section", false, false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.CURRENT_ANIARRYTHMIC_THERAPY, context.getString(R.string.current_aniarrythmic_therapy), false, new ArrayList<EvaluationItem>() {
+                        //add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.CURRENT_ANIARRYTHMIC_THERAPY, context.getString(R.string.current_aniarrythmic_therapy), false, new ArrayList<EvaluationItem>() {
                             {
                                 add(new BooleanEvaluationItem(context, ConfigurationParams.PROPOFONONE_FLECANIDE, context.getString(R.string.propofonone_flecanide), false));
                                 add(new BooleanEvaluationItem(context, ConfigurationParams.SOTALOL_AMIODARONE_MULTAQ_DOFETILIDE, context.getString(R.string.sotalol_amiodarone_multaq_dofetilide), false));
                             }
-                        }));
+                        //}));
 
                     }
                 }) {
@@ -76,6 +76,7 @@ public class AtrialFibrillation extends SectionEvaluationItem {
                         add(new NumericalEvaluationItem(context, ConfigurationParams.LAST_THROMBOEMBOLIC_EVENT_MONTHS_AGO, context.getString(R.string.last_thromboembolic_event_months_ago), context.getString(R.string.value), 0, 600, false, true));
                     }
                 }));
+                add(new BooleanEvaluationItem(context, ConfigurationParams.THYROTOXICOSIS, "Thyrotoxicosis", false));
             }
         };
     }
