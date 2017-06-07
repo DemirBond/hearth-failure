@@ -3,6 +3,8 @@ package com.szg_tech.hearthfailure.rest.api;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.util.concurrent.TimeUnit;
+
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -24,6 +26,9 @@ public class RestClient
         // Add the interceptor to OkHttpClient
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         builder.interceptors().add(new AuthenticationInterceptor(token));
+        builder.connectTimeout(120, TimeUnit.SECONDS)
+                .writeTimeout(120, TimeUnit.SECONDS)
+                .readTimeout(120, TimeUnit.SECONDS);
         OkHttpClient client = builder.build();
 
         Retrofit restAdapter = new Retrofit.Builder()
