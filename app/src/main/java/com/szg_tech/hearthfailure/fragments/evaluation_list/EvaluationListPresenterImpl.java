@@ -89,7 +89,6 @@ class EvaluationListPresenterImpl extends AbstractPresenter<EvaluationListView> 
                     bundle.putSerializable(ConfigurationParams.NEXT_SECTION_EVALUATION_ITEMS, new ArrayList<SectionEvaluationItem>() {{
                         add(new SectionEvaluationItem(activity, ConfigurationParams.PAH_COMPUTE_EVALUATION, activity.getResources().getString(R.string.compute_evaluation), false, new ArrayList<>()));
                     }});
-                    EvaluationDAO.getInstance().addToHashMap(ConfigurationParams.IS_PAH, true);
 
                     evaluationListFragment.setArguments(bundle);
                     getSupportFragmentManager().beginTransaction()
@@ -323,6 +322,13 @@ class EvaluationListPresenterImpl extends AbstractPresenter<EvaluationListView> 
                     if (ConfigurationParams.COMPUTE_EVALUATION.equals(nextSectionEvaluationItem.getId()) || ConfigurationParams.PAH_COMPUTE_EVALUATION.equals(nextSectionEvaluationItem.getId())) {
 
                         if(EvaluationDAO.getInstance().isMinimumToSaveEntered()) {
+
+                            if(ConfigurationParams.PAH_COMPUTE_EVALUATION.equals(nextSectionEvaluationItem.getId())) {
+                                EvaluationDAO.getInstance().addToHashMap(ConfigurationParams.IS_PAH, true);
+                            } else {
+                                EvaluationDAO.getInstance().addToHashMap(ConfigurationParams.IS_PAH, false);
+                            }
+
                             fragmentManager.beginTransaction()
                                     .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                                     .replace(R.id.container, new OutputFragment())

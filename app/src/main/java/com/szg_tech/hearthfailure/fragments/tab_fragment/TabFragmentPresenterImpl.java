@@ -16,6 +16,7 @@ import com.szg_tech.hearthfailure.entities.evaluation_item_elements.SectionEvalu
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.TabEvaluationItem;
 import com.szg_tech.hearthfailure.fragments.evaluation_list.EvaluationListFragment;
 import com.szg_tech.hearthfailure.fragments.output.OutputFragment;
+import com.szg_tech.hearthfailure.storage.EvaluationDAO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,6 +102,7 @@ class TabFragmentPresenterImpl extends AbstractPresenter<TabFragmentView> implem
                 Fragment nextFragment = new EvaluationListFragment();
                 SectionEvaluationItem nextSectionEvaluationItem = nextSectionEvaluationItemArrayList.get(0);
                 if (ConfigurationParams.COMPUTE_EVALUATION.equals(nextSectionEvaluationItem.getId())) {
+                    EvaluationDAO.getInstance().addToHashMap(ConfigurationParams.IS_PAH, false);
                     fragmentManager.beginTransaction()
                             .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                             .replace(R.id.container, new OutputFragment())
