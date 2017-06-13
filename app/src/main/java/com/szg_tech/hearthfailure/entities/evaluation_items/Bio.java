@@ -45,7 +45,7 @@ class Bio extends SectionEvaluationItem {
                 add(new NumericalEvaluationItem(context, ConfigurationParams.WAIST_CIRC, context.getString(R.string.waist_circ), context.getString(R.string.value), 20, 60, false));
                 add(new BooleanEvaluationItem(context, ConfigurationParams.AA, context.getString(R.string.aa), false));
                 add(new BooleanEvaluationItem(context, ConfigurationParams.PREGNANCY, context.getString(R.string.pregnancy), false));
-                add(new NumericalEvaluationItem(context, ConfigurationParams.RASAT, context.getString(R.string.ra_o2_sat), context.getString(R.string.value), 50, 100, false, true));
+                //add(new NumericalEvaluationItem(context, ConfigurationParams.RASAT, context.getString(R.string.ra_o2_sat), context.getString(R.string.value), 50, 100, false, true));
 
             }
         };

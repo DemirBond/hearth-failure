@@ -85,9 +85,9 @@ public class ConfigurationParams {
     public static final String PLEASE_SELECT_ONE = "secplease_select_one";
     public static final String NEW_HF = "chknewHF";
     public static final String DYSPNEA_ON_EXERTION = "chkDOE";
-    public static final String STRENUOUS_EXERTION = "chkclass1";
-    public static final String MORE_THAN_DAILY_ROUTINE = "chkclass2";
-    public static final String DAILY_ROUTINE_MINIMAL_ACTIVITIES = "chkclass3";
+    public static final String CLASS1 = "chkclass1";
+    public static final String CLASS2 = "chkclass2";
+    public static final String CLASS3 = "chkclass3";
     public static final String DYSPNEA_AT_REST = "chkdysp";
     public static final String WEIGHT_GAIN = "chkWeight";
     public static final String PREVIOUS_HF_HOSPITALIZATION = "chkfoutpt";
@@ -259,29 +259,29 @@ public class ConfigurationParams {
     public static final String NO_SIGNIFICANT_COMORBIDITIES = "chkcom";
     public static final String CALCULATE_HFSS = "secCalculate_HFSS";
     public static final String ESCALATING_IN_FREQUENCY = "chkescTA";
-    public static final String DMNP = "chkDMNP";
-    public static final String DMCKD = "chkDMCKD";
-    public static final String DMOTHER = "chkDMother";
-    public static final String DMARTHRO = "chkDMarthro";
-    public static final String DMSKIN = "chkDMskin";
-    public static final String DMORAL = "chkDMoral";
-    public static final String DMHYPO = "chkDMhypo";
-    public static final String DMHYPOCOMA = "chkDMhypocoma";
-    public static final String DMHYPER = "chkDMhyper";
-    public static final String DMMONO = "chkDMmono";
-    public static final String DMPOLY = "chkDMpoly";
-    public static final String DMAUTONOM = "chkDMautonom";
-    public static final String DMANGIO = "chkDMangio";
-    public static final String DMOTHERCIRC = "chkDMothercirc";
-    public static final String DMGANGRENE = "chkDMgangrene";
-    public static final String DMOTHERCOMP= "chkDMothercomp";
-    public static final String DMUNSPEC = "chkDMunspec";
-    public static final String DMWITHOUT = "chkDMwithout";
+    //public static final String DMNP = "chkDMNP";
+   // public static final String DMCKD = "chkDMCKD";
+    //public static final String DMOTHER = "chkDMother";
+    //public static final String DMARTHRO = "chkDMarthro";
+   // public static final String DMSKIN = "chkDMskin";
+    //public static final String DMORAL = "chkDMoral";
+    //public static final String DMHYPO = "chkDMhypo";
+    //public static final String DMHYPOCOMA = "chkDMhypocoma";
+    //public static final String DMHYPER = "chkDMhyper";
+    //public static final String DMMONO = "chkDMmono";
+    //public static final String DMPOLY = "chkDMpoly";
+    //public static final String DMAUTONOM = "chkDMautonom";
+    //public static final String DMANGIO = "chkDMangio";
+    //public static final String DMOTHERCIRC = "chkDMothercirc";
+    //public static final String DMGANGRENE = "chkDMgangrene";
+    //public static final String DMOTHERCOMP= "chkDMothercomp";
+    //public static final String DMUNSPEC = "chkDMunspec";
+    //public static final String DMWITHOUT = "chkDMwithout";
     public static final String DIABETES = "secdiabetes";
     public static final String TYPE_2_DM = "chkDM";
     public static final String TYPE_1_DM = "chkDM1";
-    public static final String GESTATIONAL_DM = "chkgestational";
-    public static final String RETINOPATHY = "chkRetinopathy";
+    //public static final String GESTATIONAL_DM = "chkgestational";
+    //public static final String RETINOPATHY = "chkRetinopathy";
     public static final String TOBACCO_USE = "chkSmoke";
     public static final String FAMILY_HISTORY = "chkFamily";
     public static final String HISTORY = "sechistory";
@@ -302,8 +302,8 @@ public class ConfigurationParams {
     public static final String EPISTAXIS = "chkepis";
     public static final String CHEST_BACK_PAIN_DYSPNEA = "chkCP";
     public static final String CHEM_BASIC = "secchem_basic";
-    public static final String NA_MEQ_L = "txtNameq";
-    public static final String NA = "txtNa";
+    public static final String NA_MEQ_L = "txtNa";
+    public static final String NA = "txtNameq";
     public static final String URINE_NA_MEQ_L = "txturineNa";
     public static final String SERUM_OSMOLALITY = "txtsosm";
     public static final String URINE_OSMOLALITY = "txtuosm";
@@ -406,6 +406,7 @@ public class ConfigurationParams {
     public static final String CHLORTHALIDONE_METOLAZONE = "chkchlorthalidone";
     public static final String CCB_OTHER_VASOLIDATORS = "chkCCB";
     public static final String CURRENT_VKA_THERAPY = "chkVKA";
+    public static final String VASODILATOR = "chkvasodilator";
     public static final String DIRECT_THROMBIN_INHIBITORS = "chkCAC";
     public static final String FACTOR_XA_INHIBITORS = "chkFactorX";
     public static final String FUROSEMIDE_40 = "chkfurosemide40";
@@ -576,9 +577,9 @@ public class ConfigurationParams {
     public static final String PAROXYMAL_AF = "chkparoxysmal";
     public static final String DURATION_DAYS = "Txtafd";
     public static final String S_P_SUCCESSFUL_ABLATION = "chkablation";
-    public static final String VENTRICULAR_RATE_CONTROL = "chkpharm";
+    public static final String VENTRICULAR_RATE_CONTROL = "ChkCV";
     public static final String HEART_RATE_WITH_ACTIVITY = "TxtCMP";
-    public static final String RHYTM_CONTROL = "chkCV";
+    public static final String RHYTM_CONTROL = "chkCAA";
     public static final String CURRENT_ANIARRYTHMIC_THERAPY = "chkCAA";
     public static final String SOTALOL_AMIODARONE_MULTAQ_DOFETILIDE = "chkclass3AA";
     public static final String PROPOFONONE_FLECANIDE = "chkclass1AA";
@@ -681,7 +682,7 @@ public class ConfigurationParams {
     public static final String THERAPEUTICS = "sectherapeutics";
     public static final String REFERENCES = "secreferences";
     public static final String NO_INFO_AVAILABLE = "secno_info_available";
-    public static final String SYNCOPE = "chkSyncope";
+    public static final String SYNCOPE = "Chksyncope";
     public static final String SYMPTOMATIC_SINUS_NODE_DYSFUNCTION = "chkSinusNodeDysfunction";
     public static final String HIGH_GRADE_AV_NODE_DISEASE = "chkAVNodeDisease";
     public static final String ISOLATED_NEUROCARDIOGENIC_UNEXPLAINED_SYNCOPE = "chkVasoDepressorSyncope";
@@ -796,12 +797,13 @@ public class ConfigurationParams {
     public static final String HIGH_RISK_SUPRA_INGUINAL_VASCULAR_SURGERY = "chkvascular";
     public static final String LOW_RISK_CATARACT_PLASTIC = "chklowriskelec";
     public static final String OTHER_CARDIAC = "chkcardiac";
+
     public static final String ADVANCED_LHF = "secadvanced_lhf";
-    public static final String ADVANCED_HF = "secadvanced_hf";
+    public static final String ADVANCED_HF = "chkD";
 
     public static final String CCB= "chkCCB";
     public static final String HYDRALAZINE_NITRATE = "chkvasodilator";
-
+    public static final String ADVANCED_HEART_FAILURE = "chkHF";
     public static final String HEART_FAILURE_DURATION = "secheart_failure_duration";
     public static final String HEART_FAILURE_DURATION_WEEK = "txtdur";
     public static final String HFPLVF = "chkHFPLVF";
@@ -843,7 +845,7 @@ public class ConfigurationParams {
     public static final String PADP_MMHG = "txtPADP";
     public static final String RVEDP_MMGH = "txtRVEDP";
     public static final String SIX_MW_DISTANCE = "txt6MWT";
-    public static final String MAX_VO_MG_KG_MIN = "TxtVO2";
+    public static final String MAX_VO_MG_KG_MIN = "txtVO2";
 
     public static final String ON_SET_HEART_FAILURE_MONTH = "txtHearthFailureMonth";
     public static final String ON_SET_HEART_FAILURE_YEAR = "txtHearthFailureYear";

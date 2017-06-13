@@ -226,7 +226,7 @@ public class HeartSpecialistManagement extends SectionEvaluationItem {
 
                 add(new SectionEvaluationItem(context, ConfigurationParams.ADVANCED_LHF, context.getString(R.string.advanced_lhf), false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.HEART_FAILURE, context.getString(R.string.heart_failure), false, new ArrayList<EvaluationItem>() {
+                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.ADVANCED_HEART_FAILURE, context.getString(R.string.heart_failure), false, new ArrayList<EvaluationItem>() {
                             {
                                 add(new SectionEvaluationItem(context, ConfigurationParams.HEART_FAILURE_DURATION, context.getString(R.string.heart_failure_duration), false, new ArrayList<EvaluationItem>() {
                                     {
@@ -266,7 +266,7 @@ public class HeartSpecialistManagement extends SectionEvaluationItem {
                                 }, SectionElementState.OPENED));
                                 add(new SectionEvaluationItem(context, ConfigurationParams.ETIOLOGY, context.getString(R.string.Etiology), false, new ArrayList<EvaluationItem>() {
                                     {
-                                        add(new BooleanEvaluationItem(context, ConfigurationParams.DCM, context.getString(R.string.dcm), false));
+                                        add(new BooleanEvaluationItem(context, ConfigurationParams.DCM, "Nonischemic CMP", false));
                                         add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.HOCM, context.getString(R.string.hocm), false, new ArrayList<EvaluationItem>() {
                                             {
                                                 add(new BooleanEvaluationItem(context, ConfigurationParams.LVH_MORE_30, context.getString(R.string.lvh_more_30), false));
@@ -394,10 +394,7 @@ public class HeartSpecialistManagement extends SectionEvaluationItem {
                                         add(new BooleanEvaluationItem(context, ConfigurationParams.ULTRAFILTRATION, context.getString(R.string.ultrafiltration), false));
                                         add(new BooleanEvaluationItem(context, ConfigurationParams.IABP, context.getString(R.string.iabp), false));
                                         add(new BooleanEvaluationItem(context, ConfigurationParams.TEMPORARY_PM, context.getString(R.string.temporary_pm), false));
-                                        add(new BooleanEvaluationItem(context, ConfigurationParams.ON_MAX_TOLERATED_B_BLOCKER, context.getString(R.string.on_max_tolerated_b_blocker), false));
-                                        add(new BooleanEvaluationItem(context, ConfigurationParams.ON_MAX_TOLERATED_ACE_IARB, context.getString(R.string.on_max_tolerated_acei_arb), false));
-                                        add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_INOTROPE_DEPENDENCE, context.getString(R.string.chronic_inotrope_dependence), false));
-                                        add(new BooleanEvaluationItem(context, ConfigurationParams.INTERMITTENT_INOTROPE_DEPENDENCE, context.getString(R.string.intermittent_inotrope_dependence), false));
+
                                     }
                                 }, SectionElementState.OPENED));
                             }
@@ -419,7 +416,7 @@ public class HeartSpecialistManagement extends SectionEvaluationItem {
                                 add(new BooleanEvaluationItem(context, ConfigurationParams.LBBB, "LBBB", false));
                             }
                         }));
-                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.NEW_ONSET_HEART_FAILURE_INITIAL_EVALUATION, "Laboratories", false, new ArrayList<EvaluationItem>() {
+                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.LABORATORIES, "Laboratories", false, new ArrayList<EvaluationItem>() {
                             {
                                 add(new NumericalEvaluationItem(context, ConfigurationParams.GFR_ML_MIN, "GFR","Value", 0, 120, false, true));
                                 add(new NumericalEvaluationItem(context, ConfigurationParams.CREATININE_MG_DL, "Creatinine","Value", 0.4, 20, false));
@@ -434,7 +431,10 @@ public class HeartSpecialistManagement extends SectionEvaluationItem {
                                 add(new NumericalEvaluationItem(context, ConfigurationParams.BNP_PG_ML, "BNP","Value", 10, 100000, false, true));
                             }
                         }));
-
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.ON_MAX_TOLERATED_B_BLOCKER, "Maximum tolerated b blocker", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.ON_MAX_TOLERATED_ACE_IARB, "Maximum tolerated ACE I/ ARB", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_INOTROPE_DEPENDENCE, "Chronic inotrope dependence", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.INTERMITTENT_INOTROPE_DEPENDENCE, "Intermittent inotrope dependence", false));
                     }
                 }, SectionElementState.OPENED));
 

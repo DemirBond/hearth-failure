@@ -40,7 +40,16 @@ public class HeartFailure extends SectionEvaluationItem {
                         add(new BooleanEvaluationItem(context, ConfigurationParams.TWO_UNSCHEDULED_VISITS, "Two unscheduled ED or clinic visits in 12 months", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.CHEST_PAIN, context.getString(R.string.chest_pain), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.WEIGHT_GAIN, "Weight Gain", false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.DYSPNEA_ON_EXERTION, "Dyspnea on exertion", false));
+                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.DYSPNEA_ON_EXERTION, "Dyspnea on exertion", false, new ArrayList<EvaluationItem>() {
+                            {
+                                add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS1, "Dyspnea on strenous exertion", false));
+                                add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS2, "Dyspnea on more than routine activities", false));
+                                add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS3, "Dyspnea on minimum activities", false));
+
+                            }
+                        }));
+
+
                         add(new BooleanEvaluationItem(context, ConfigurationParams.DYSPNEA_AT_REST, "Dyspnea at rest", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.S_P_ICD, "S/P AICD", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.S_P_BiV_PPM, "S/P BIVPACER", false));
@@ -99,7 +108,7 @@ public class HeartFailure extends SectionEvaluationItem {
                 add(new SectionEvaluationItem(context, ConfigurationParams.CLINICAL_PRESENTATION, context.getString(R.string.clinical_presentation), false, new ArrayList<EvaluationItem>() {
                     {
                         add(new NumericalEvaluationItem(context, ConfigurationParams.LVEF, context.getString(R.string.lvef), context.getString(R.string.value), 1, 80, false, true));
-                        add(new NumericalEvaluationItem(context, ConfigurationParams.RASAT, context.getString(R.string.ra_o2_sat), context.getString(R.string.value), 50, 100, false, true));
+                        add(new NumericalEvaluationItem(context, ConfigurationParams.RASAT, "RA O2 SAT","Value", 50, 100, false, true));
                         add(new NumericalEvaluationItem(context, ConfigurationParams.VO2SAT, context.getString(R.string.cv_svo2_sat), context.getString(R.string.value), 30, 100, false, true));
 
                         add(new BooleanEvaluationItem(context, ConfigurationParams.HJR, context.getString(R.string.hepatojuluar_reflux), false));
@@ -199,8 +208,13 @@ public class HeartFailure extends SectionEvaluationItem {
                                 add(new BooleanEvaluationItem(context, ConfigurationParams.HCTZ, context.getString(R.string.hctz), false));
                                 add(new BooleanEvaluationItem(context, ConfigurationParams.INDAPAMIDE, context.getString(R.string.indapamide), false));
                                 add(new BooleanEvaluationItem(context, ConfigurationParams.CHLORTHALIDONE_METOLAZONE, context.getString(R.string.chlorthalidone_metolazone), false));
+
                             }
                         }));
+
+                             add(new BooleanEvaluationItem(context, ConfigurationParams.CURRENT_VKA_THERAPY, "Current VKA therapy", false));
+                             add(new BooleanEvaluationItem(context, ConfigurationParams.CCB_OTHER_VASOLIDATORS, "CCB", false));
+                             add(new BooleanEvaluationItem(context, ConfigurationParams.VASODILATOR, "Vasodilator", false));
                     }
                 }, SectionEvaluationItem.SectionElementState.OPENED));
 

@@ -27,57 +27,34 @@ class MajorCVRisk extends SectionEvaluationItem {
             {
                 add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.DIABETES, context.getString(R.string.diabetes), false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.TYPE_2_DM, context.getString(R.string.type_2_dm), false, new ArrayList<EvaluationItem>() {
-                            {
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMNP, "Diabetic Nephropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMCKD, "Diabetic CKD", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHER,"Other kidney complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMMONO, "Diabetic mononeuropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMPOLY, "Diabetic polyneuropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMAUTONOM, "Diabetic autonom neuropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMANGIO, "Peripheral angiopathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHERCIRC, "Other circulatory complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMGANGRENE, "Angiopathy with gangrene", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMARTHRO, "Diabetic arthropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMSKIN, "Diabetic skin complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMORAL, "Diabetic oral complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPO, "Hypoglycemia", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPOCOMA, "Hypoglycemia with coma", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPER, "Hyperglycemia", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHERCOMP, "Other specified complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMUNSPEC, "Unspecified complications", false));
+                        //add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.TYPE_2_DM, context.getString(R.string.type_2_dm), false, new ArrayList<EvaluationItem>() {
+                            //{
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMNP, "Diabetic Nephropathy", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMCKD, "Diabetic CKD", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHER,"Other kidney complications", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMMONO, "Diabetic mononeuropathy", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMPOLY, "Diabetic polyneuropathy", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMAUTONOM, "Diabetic autonom neuropathy", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMANGIO, "Peripheral angiopathy", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHERCIRC, "Other circulatory complications", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMGANGRENE, "Angiopathy with gangrene", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMARTHRO, "Diabetic arthropathy", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMSKIN, "Diabetic skin complications", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMORAL, "Diabetic oral complications", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPO, "Hypoglycemia", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPOCOMA, "Hypoglycemia with coma", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPER, "Hyperglycemia", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHERCOMP, "Other specified complications", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMUNSPEC, "Unspecified complications", false));
 
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMWITHOUT, " Without complications", false));
-                            }
-                        }));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.DMWITHOUT, " Without complications", false));
+                            //}
+                        //}));
 
 
-                        add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.TYPE_1_DM, context.getString(R.string.type_1_dm), false, new ArrayList<EvaluationItem>() {
-                            {
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMNP, "Diabetic Nephropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMCKD, "Diabetic CKD", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMCKD,"Other kidney complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMMONO, "Diabetic mononeuropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMPOLY, "Diabetic polyneuropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMAUTONOM, "Diabetic autonom neuropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMANGIO, "Peripheral angiopathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHERCIRC, "Other circulatory complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMGANGRENE, "Angiopathy with gangrene", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMARTHRO, "Diabetic arthropathy", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMSKIN, "Diabetic skin complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMORAL, "Diabetic oral complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPO, "Hypoglycemia", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPOCOMA, "Hypoglycemia with coma", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMHYPER, "Hyperglycemia", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMOTHERCOMP, "Other specified complications", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMUNSPEC, "Unspecified complications", false));
 
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.DMWITHOUT, " Without complications", false));
-
-                            }
-                        }));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.GESTATIONAL_DM, context.getString(R.string.gestational_dm), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.RETINOPATHY, context.getString(R.string.retinopathy), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.GESTATIONAL_DM, context.getString(R.string.gestational_dm), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.RETINOPATHY, context.getString(R.string.retinopathy), false));
                     }
                 }));
                 add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.SYSTEMIC_ARTERIAL_HYPERTENSION, context.getString(R.string.systemic_arterial_hypertension), false, new ArrayList<EvaluationItem>() {
