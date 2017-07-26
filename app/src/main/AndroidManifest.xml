@@ -12,11 +12,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name="com.szg_tech.hearthfailure.activities.authentication.AuthenticationActivity"
+
+        <activity android:name=".activities.authentication.SplashActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible|adjustResize"
-            android:noHistory="true">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,12 +24,19 @@
         </activity>
 
         <activity
-            android:name="com.szg_tech.hearthfailure.activities.main.MainActivity"
+            android:name=".activities.authentication.AuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:noHistory="true">
+        </activity>
+
+        <activity
+            android:name=".activities.main.MainActivity"
             android:parentActivityName="com.szg_tech.hearthfailure.activities.authentication.AuthenticationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/EvaluationTheme" />
         <activity
-            android:name="com.szg_tech.hearthfailure.activities.evaluation.EvaluationActivity"
+            android:name=".activities.evaluation.EvaluationActivity"
             android:parentActivityName="com.szg_tech.hearthfailure.activities.main.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/EvaluationTheme" />

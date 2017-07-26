@@ -18,4 +18,5 @@
         android:paddingStart="@dimen/cell_padding_left"
         android:paddingTop="@dimen/label_cell_padding_top"
         app:type="subheading_section" />
+
 </android.support.v7.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_logo"
+                android:layout_gravity="center_horizontal"/>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Version 1.18 (Eighteenth revision)"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
