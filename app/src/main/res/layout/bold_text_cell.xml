@@ -4,7 +4,6 @@
     android:id="@+id/root_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#fff"
     android:minHeight="50dp"
     app:cardCornerRadius="0dp"
     app:cardElevation="2dp">
@@ -13,9 +12,11 @@
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/section_bg_highlight"
         android:paddingBottom="8dp"
         android:paddingEnd="@dimen/cell_padding_right"
         android:paddingStart="@dimen/cell_padding_left"
         android:paddingTop="23dp"
         app:type="subheading_left" />
+
 </android.support.v7.widget.CardView>

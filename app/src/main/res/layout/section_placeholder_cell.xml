@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="1dp"
-    android:background="#fff"
     android:minHeight="@dimen/icon_cell_height"
     app:cardCornerRadius="0dp"
     app:cardElevation="1dp">
@@ -12,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/section_bg_highlight"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/icon_cell_padding_bottom"

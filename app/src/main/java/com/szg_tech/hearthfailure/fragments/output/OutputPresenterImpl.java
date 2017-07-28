@@ -160,7 +160,7 @@ class OutputPresenterImpl extends AbstractPresenter<OutputView> implements Outpu
             if (actionBar != null) {
                 actionBar.setTitle(R.string.output);
             }
-            setActionBarColorDependingOnOutputStatus((AppCompatActivity) activity);
+//            setActionBarColorDependingOnOutputStatus((AppCompatActivity) activity);
         }
     }
 
@@ -182,21 +182,25 @@ class OutputPresenterImpl extends AbstractPresenter<OutputView> implements Outpu
     private void setActionBarColorDependingOnOutputStatus(AppCompatActivity activity) {
         int actionBarColor;
         int statusBarColor;
-        switch (status) {
-            case 0: //BAD
-                actionBarColor = ContextCompat.getColor(activity, R.color.salmon);
-                statusBarColor = ContextCompat.getColor(activity, R.color.grapefruit);
-                break;
-            case 1: //MIDDLE
-                actionBarColor = ContextCompat.getColor(activity, R.color.dark_cream);
-                statusBarColor = ContextCompat.getColor(activity, R.color.light_gold);
-                break;
-            case 2: //GOOD
-            default:
-                actionBarColor = ContextCompat.getColor(activity, R.color.hospital_green);
-                statusBarColor = ContextCompat.getColor(activity, R.color.hospital_green_status);
-                break;
-        }
+//        switch (status) {
+//            case 0: //BAD
+//                actionBarColor = ContextCompat.getColor(activity, R.color.salmon);
+//                statusBarColor = ContextCompat.getColor(activity, R.color.grapefruit);
+//                break;
+//            case 1: //MIDDLE
+//                actionBarColor = ContextCompat.getColor(activity, R.color.dark_cream);
+//                statusBarColor = ContextCompat.getColor(activity, R.color.light_gold);
+//                break;
+//            case 2: //GOOD
+//            default:
+//                actionBarColor = ContextCompat.getColor(activity, R.color.hospital_green);
+//                statusBarColor = ContextCompat.getColor(activity, R.color.hospital_green_status);
+//                break;
+//        }
+
+        actionBarColor = ContextCompat.getColor(activity, R.color.pale_lavender_dark);
+        statusBarColor = ContextCompat.getColor(activity, R.color.pale_lavender);
+
         ActionBar actionBar = activity.getSupportActionBar();
         if (actionBar != null) {
             actionBar.setBackgroundDrawable(new ColorDrawable(actionBarColor));

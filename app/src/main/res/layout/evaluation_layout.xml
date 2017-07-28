@@ -8,12 +8,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/section_bg_highlight">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="#00ffffff"/>
+
     </RelativeLayout>
 
     <com.szg_tech.hearthfailure.core.views.ButtonWithChevron

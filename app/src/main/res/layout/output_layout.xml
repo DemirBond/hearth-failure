@@ -18,15 +18,14 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/section_bg_highlight"
         android:layout_weight="1" />
 
     <com.szg_tech.hearthfailure.core.views.CustomTextView
         android:id="@+id/complete_evaluation"
         android:layout_width="match_parent"
         android:layout_height="@dimen/icon_cell_height"
-        android:background="#fff"
         android:gravity="center"
         android:text="@string/complete_evaluation"
-        android:textColor="@color/green_text"
         app:type="body_link" />
 </LinearLayout>
