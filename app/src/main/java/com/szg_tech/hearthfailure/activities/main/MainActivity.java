@@ -8,9 +8,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.szg_tech.hearthfailure.R;
+import com.szg_tech.hearthfailure.activities.BaseAppCompatActivity;
 import com.szg_tech.hearthfailure.fragments.home.HomeFragment;
+import com.szg_tech.hearthfailure.utils.AppLock.ApplockManager;
 
-public class MainActivity extends AppCompatActivity implements MainActivityView {
+public class MainActivity extends BaseAppCompatActivity implements MainActivityView {
     private MainActivityPresenter presenter = createPresenter();
 
     private OnAuthorizationChangedListener onAuthorizationChangedListener;
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements MainActivityView 
                 .addToBackStack(HomeFragment.class.getSimpleName())
                 .commit();
         presenter.onCreate();
+
+        ApplockManager.getInstance().enableDefaultAppLockIfAvailable(getApplication());
     }
 
     @Override

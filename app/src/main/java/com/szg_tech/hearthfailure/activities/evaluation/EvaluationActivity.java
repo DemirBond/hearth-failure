@@ -9,11 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.szg_tech.hearthfailure.R;
+import com.szg_tech.hearthfailure.activities.BaseAppCompatActivity;
 import com.szg_tech.hearthfailure.activities.authentication.AuthenticationActivity;
 import com.szg_tech.hearthfailure.core.views.modal.AlertModalManager;
 import com.szg_tech.hearthfailure.entities.evaluation_items.HeartSpecialistManagement;
 
-public class EvaluationActivity extends AppCompatActivity implements EvaluationActivityView {
+public class EvaluationActivity extends BaseAppCompatActivity implements EvaluationActivityView {
     EvaluationActivityPresenter presenter = createPresenter();
     private Runnable onBackPressedListener;
     private HeartSpecialistManagement heartSpecialistManagement;

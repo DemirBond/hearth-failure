@@ -2,6 +2,8 @@ package com.szg_tech.hearthfailure.core;
 
 import android.app.Application;
 
+import com.szg_tech.hearthfailure.utils.AppLock.ApplockManager;
+
 import io.realm.Realm;
 
 public class HearthFailureApplication extends Application {
@@ -10,5 +12,9 @@ public class HearthFailureApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Realm.init(this);
+    }
+
+    public void touch() {
+        ApplockManager.getInstance().updateTouch();
     }
 }

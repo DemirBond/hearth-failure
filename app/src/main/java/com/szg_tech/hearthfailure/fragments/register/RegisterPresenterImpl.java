@@ -16,8 +16,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.szg_tech.hearthfailure.R;
+import com.szg_tech.hearthfailure.activities.authentication.AuthenticationActivity;
 import com.szg_tech.hearthfailure.core.AbstractPresenter;
 import com.szg_tech.hearthfailure.core.views.modal.ProgressModalManager;
+import com.szg_tech.hearthfailure.fragments.auth.AuthFragment;
 import com.szg_tech.hearthfailure.rest.authentication.AuthenticationClient;
 import com.szg_tech.hearthfailure.rest.authentication.AuthenticationClientProvider;
 import com.szg_tech.hearthfailure.rest.requests.RegisterRequest;
@@ -62,6 +64,8 @@ public class RegisterPresenterImpl extends AbstractPresenter<RegisterView> imple
             }
         }
 
+        ((AuthenticationActivity)activity).showMenu(true);
+
     }
 
     private void tryRegister(String name, String email, String password, String confirmPassword) {
@@ -77,7 +81,15 @@ public class RegisterPresenterImpl extends AbstractPresenter<RegisterView> imple
                         progressDialog.dismiss();
                         if(response.isSuccessful()) {
                             showSnackbarBottomButtonRegisterSucceed(activity);
-                            getSupportFragmentManager().popBackStack();
+//                            getSupportFragmentManager().popBackStack();
+
+                            getSupportFragmentManager().beginTransaction()
+                                    .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                                    .replace(R.id.container, new AuthFragment())
+                                    .addToBackStack(AuthFragment.class.getSimpleName())
+                                    .commit();
+
+
                         } else {
                             showSnackbarBottomButtonRegisterError(activity);
                         }

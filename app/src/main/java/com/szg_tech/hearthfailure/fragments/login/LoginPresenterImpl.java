@@ -50,7 +50,7 @@ public class LoginPresenterImpl extends AbstractPresenter<LoginView> implements 
             recyclerView.setLayoutManager(layoutManager);
             recyclerView.setAdapter(new LoginPresenterImpl.RecyclerViewAdapter(activity));
 //            ((AuthenticationActivity)activity).onLoginSucceed();
-            tryLogin("demo", "demo1");
+//            tryLogin("demo", "demo1");
         }
         checkCredentials();
     }
@@ -68,6 +68,8 @@ public class LoginPresenterImpl extends AbstractPresenter<LoginView> implements 
                 actionBar.setBackgroundDrawable(new ColorDrawable(actionBarColor));
             }
         }
+
+        ((AuthenticationActivity)activity).showMenu(false);
 
     }
 
@@ -165,7 +167,8 @@ public class LoginPresenterImpl extends AbstractPresenter<LoginView> implements 
                 System.out.println("I am in LoginFragment on click");
                 String email = holder.email.getText().toString();
                 String password = holder.password.getText().toString();
-                if(validate()) {
+                if(validate())
+                {
                     tryLogin(email, password);
                 }
             }

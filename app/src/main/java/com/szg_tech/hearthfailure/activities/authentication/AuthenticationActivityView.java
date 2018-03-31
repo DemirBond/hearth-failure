@@ -9,4 +9,6 @@ import com.szg_tech.hearthfailure.core.MVPView;
 public interface AuthenticationActivityView extends MVPView {
 
     void onLoginSucceed();
+
+    void showMenu(boolean isVisible);
 }

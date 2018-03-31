@@ -924,6 +924,7 @@
     <string name="ckd">CKD</string>
     <string-array name="home_menu">
         <item>@string/home</item>
+
         <item>@string/about</item>
         <item>@string/sign_in_up</item>
     </string-array>
@@ -940,4 +941,11 @@
     <string name="exit_app">We could not connect to the internet. Would you like to quit the app?</string>
 
     <string name="no_saved_evaluations">There is not saved evaluations.</string>
+
+    <string name="auth">Verification</string>
+    <string name="auth_title">You will receive a text message with a verification code</string>
+    <string name="auth_hint">Please enter your verification code</string>
+    <string name="submit">Submit</string>
+    <string name="contact_admin">Cannot Sign In? - Contact Administrator</string>
+    <string name="snackbar_bottom_button_auth_error">Code verification is not successful.</string>
 </resources>
