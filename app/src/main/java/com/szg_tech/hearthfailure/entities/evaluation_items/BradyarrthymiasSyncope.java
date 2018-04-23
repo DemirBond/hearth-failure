@@ -5,6 +5,7 @@ import android.content.Context;
 import com.szg_tech.hearthfailure.R;
 import com.szg_tech.hearthfailure.core.ConfigurationParams;
 import com.szg_tech.hearthfailure.entities.EvaluationItem;
+import com.szg_tech.hearthfailure.entities.evaluation_item_elements.BoldEvaluationItem;
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.BooleanEvaluationItem;
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.SectionEvaluationItem;
 

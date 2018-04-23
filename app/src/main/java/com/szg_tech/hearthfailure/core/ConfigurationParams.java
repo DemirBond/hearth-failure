@@ -8,10 +8,11 @@ public class ConfigurationParams {
     public static final String IS_SAVED_EVALUATION_LIST = "sec_saved_evaluation_list";
     public static final String AGE = "txtage";
     public static final String GENDER = "gender";
+
     public static final String MALE = "male";
     public static final String FEMALE = "female";
     public static final String BMI = "txtBMI";
-    public static final String WEIGHT = "txtweight";
+    public static final String WEIGHT = "txtWeight";
     public static final String HEART_RATE = "txtHR";
     public static final String SBP = "txtSBP";
     public static final String DBP = "txtDBP";
@@ -577,7 +578,7 @@ public class ConfigurationParams {
     public static final String PAROXYMAL_AF = "chkparoxysmal";
     public static final String DURATION_DAYS = "Txtafd";
     public static final String S_P_SUCCESSFUL_ABLATION = "chkablation";
-    public static final String VENTRICULAR_RATE_CONTROL = "ChkCV";
+    public static final String VENTRICULAR_RATE_CONTROL = "chkCV";
     public static final String HEART_RATE_WITH_ACTIVITY = "TxtCMP";
     public static final String RHYTM_CONTROL = "chkCAA";
     public static final String CURRENT_ANIARRYTHMIC_THERAPY = "chkCAA";
@@ -849,4 +850,7 @@ public class ConfigurationParams {
 
     public static final String ON_SET_HEART_FAILURE_MONTH = "txtHearthFailureMonth";
     public static final String ON_SET_HEART_FAILURE_YEAR = "txtHearthFailureYear";
-}
+
+    public static final String EVALUATION_ID = "evaluationID";
+  }
+

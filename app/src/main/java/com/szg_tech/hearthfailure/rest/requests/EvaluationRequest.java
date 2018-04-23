@@ -20,7 +20,9 @@ public class EvaluationRequest {
     private int DBP;
     private boolean isPAH;
     private String inputs;
-    private boolean isSave;
+    private boolean isSave=false;
+
+    private int  evaluationId=0;
 
 
     public EvaluationRequest(String name, int age, int gender, int SBP, int DBP, boolean isPAH, String inputs) {
@@ -131,6 +133,7 @@ public class EvaluationRequest {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         if(isSave) {
+            map.put("evaluationID", evaluationId);
             map.put("name", name);
         }
         map.put("age", age);

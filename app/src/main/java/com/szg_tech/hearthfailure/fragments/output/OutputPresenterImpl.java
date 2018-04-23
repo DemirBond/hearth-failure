@@ -35,6 +35,7 @@ import com.szg_tech.hearthfailure.storage.EvaluationDAO;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import retrofit2.Call;
@@ -81,10 +82,11 @@ class OutputPresenterImpl extends AbstractPresenter<OutputView> implements Outpu
         ProgressDialog progressDialog = ProgressModalManager.createAndShowComputeEvaluationProgressDialog(getActivity());
         HashMap<String, Object> evaluationValueMap = EvaluationDAO.getInstance().loadValues();
 
-        EvaluationRequest request = new EvaluationRequest(evaluationValueMap, false);
+        EvaluationRequest request = new EvaluationRequest(evaluationValueMap, true);
         System.out.println(request.toMap());
-
-        RestClientProvider.get().getApi().computeOrSaveEvaluation(request.toMap()).enqueue(new Callback<EvaluationResponse>() {
+        Map map = request.toMap();
+        map.put("forHF",true);
+        RestClientProvider.get().getApi().computeEvaluation(map).enqueue(new Callback<EvaluationResponse>() {
             @Override
             public void onResponse(Call<EvaluationResponse> call, Response<EvaluationResponse> response) {
 
@@ -128,21 +130,33 @@ class OutputPresenterImpl extends AbstractPresenter<OutputView> implements Outpu
     public void onCompleteEvaluationButtonClick() {
         Activity activity = getActivity();
         if (activity != null) {
-
             AlertModalManager.createAndShowSaveEvaluationAlertDialog(getActivity(), v -> {
                 HashMap<String, Object> evaluationValueMap = EvaluationDAO.getInstance().loadValues();
-                EvaluationRequest request = new EvaluationRequest(evaluationValueMap, true);
-                RestClientProvider.get().getApi().computeOrSaveEvaluation(request.toMap()).enqueue(new Callback<EvaluationResponse>() {
+                evaluationValueMap.put("forHF", true);
+                final EvaluationRequest request = new EvaluationRequest(evaluationValueMap, true);
+
+                RestClientProvider.get().getApi().computeEvaluation(request.toMap()).enqueue(new Callback<EvaluationResponse>() {
                     @Override
                     public void onResponse(Call<EvaluationResponse> call, Response<EvaluationResponse> response) {
-
+                        //
                     }
-
                     @Override
                     public void onFailure(Call<EvaluationResponse> call, Throwable t) {
 
                     }
                 });
+
+                RestClientProvider.get().getApi().saveEvaluation(request.toMap()).enqueue(new Callback<EvaluationResponse>() {
+                    @Override
+                    public void onResponse(Call<EvaluationResponse> call, Response<EvaluationResponse> response) {
+                        //HERE
+                    }
+                    @Override
+                    public void onFailure(Call<EvaluationResponse> call, Throwable t) {
+                    }
+                });
+
+
                 EvaluationDAO.getInstance().clearEvaluation();
                 activity.finish();
             }, v -> {

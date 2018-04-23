@@ -9,6 +9,7 @@ import com.szg_tech.hearthfailure.entities.evaluation_item_elements.BoldEvaluati
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.BooleanEvaluationItem;
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.EmptyCellEvaluationItem;
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.NumericalEvaluationItem;
+import com.szg_tech.hearthfailure.entities.evaluation_item_elements.RadioButtonGroupEvaluationItem;
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.SectionCheckboxEvaluationItem;
 import com.szg_tech.hearthfailure.entities.evaluation_item_elements.SectionEvaluationItem;
 
@@ -32,9 +33,23 @@ public class HeartFailure extends SectionEvaluationItem {
             {
                 add(new SectionEvaluationItem(context, ConfigurationParams.HISTORY, context.getString(R.string.history), false, new ArrayList<EvaluationItem>() {
                     {
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.NEW_ON_SET_INITIAL_EVALUATION, "New Onset / Suspected Heart Failure", "radio_section", false, false, new ArrayList<EvaluationItem>() {
 
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.NEW_ON_SET_INITIAL_EVALUATION, context.getString(R.string.new_onset_hf_initial_evaluation), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_HF, "Chronic known HF", false));
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.NEW_ON_SET_INITIAL_EVALUATION, context.getString(R.string.new_onset_hf_initial_evaluation), false));
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.CHRONIC_HF, "Chronic Known Heart Failure", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_HF, "Chronic known HF", false));
                         add(new NumericalEvaluationItem(context, ConfigurationParams.HF_DIAGNOSIS_DURATION_WEEK, context.getString(R.string.duration_week), context.getString(R.string.value), 0, 999, false, true));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.ONE_OR_MORE_HF_ADMISSION, "One or more HF admissions in 12 months", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.TWO_UNSCHEDULED_VISITS, "Two unscheduled ED or clinic visits in 12 months", false));
@@ -42,9 +57,32 @@ public class HeartFailure extends SectionEvaluationItem {
                         add(new BooleanEvaluationItem(context, ConfigurationParams.WEIGHT_GAIN, "Weight Gain", false));
                         add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.DYSPNEA_ON_EXERTION, "Dyspnea on exertion", false, new ArrayList<EvaluationItem>() {
                             {
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS1, "Dyspnea on strenous exertion", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS2, "Dyspnea on more than routine activities", false));
-                                add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS3, "Dyspnea on minimum activities", false));
+
+                                add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.CLASS1, "Dyspnea on strenous exertion", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                                }) {
+                                    {
+                                        setBackgroundHighlighted(true);
+                                    }
+                                });
+                                add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.CLASS2, "Dyspnea on more than routine activities", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                                }) {
+                                    {
+                                        setBackgroundHighlighted(true);
+                                    }
+                                });
+                                add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.CLASS3, "Dyspnea on minimum activities", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                                }) {
+                                    {
+                                        setBackgroundHighlighted(true);
+                                    }
+                                });
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS1, "Dyspnea on strenous exertion", false));
+                                //add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS2, "Dyspnea on more than routine activities", false));
+                                //
+                                // add(new BooleanEvaluationItem(context, ConfigurationParams.CLASS3, "Dyspnea on minimum activities", false));
 
                             }
                         }));
@@ -144,11 +182,38 @@ public class HeartFailure extends SectionEvaluationItem {
                                 add(new NumericalEvaluationItem(context, ConfigurationParams.VO_MAX_KG, context.getString(R.string.vo_max_kg), context.getString(R.string.value), 6, 40, false, true));
                             }
                         }));
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_1, " NYHA Class 1 ", "radio_section", false, false, new ArrayList<EvaluationItem>() {
 
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_1, context.getString(R.string.nyha_ccvs_class_1), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_2, context.getString(R.string.nyha_ccvs_class_2), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_3, context.getString(R.string.nyha_ccvs_class_3), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_4, context.getString(R.string.nyha_ccvs_class_4), false));
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_2, " NYHA Class 2", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_3, " NYHA Class 3", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_4, " NYHA Class 4 ", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_1, context.getString(R.string.nyha_ccvs_class_1), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_2, context.getString(R.string.nyha_ccvs_class_2), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_3, context.getString(R.string.nyha_ccvs_class_3), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.NYHA_CCVS_CLASS_4, context.getString(R.string.nyha_ccvs_class_4), false));
 
 
                     }
@@ -220,10 +285,33 @@ public class HeartFailure extends SectionEvaluationItem {
 
                 add(new SectionEvaluationItem(context, ConfigurationParams.ACUTELY_DECOMPENSATED_OR_HOSPITALIZED, context.getString(R.string.acutely_decompensated_hospitalized), false, new ArrayList<EvaluationItem>() {
                     {
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.DAY1, context.getString(R.string.day1), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.DAY2, context.getString(R.string.day2), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.DAY3, context.getString(R.string.day3), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.DAY4, context.getString(R.string.pre_discharge_or_discharge_day), false));
+
+
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.DAY1, " In Hospital Day 1  ", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.DAY2, " In Hospital Day2 ", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        add(new RadioButtonGroupEvaluationItem(context, ConfigurationParams.DAY4, " Discharge day ", "radio_section", false, false, new ArrayList<EvaluationItem>() {
+
+                        }) {
+                            {
+                                setBackgroundHighlighted(true);
+                            }
+                        });
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.DAY1, context.getString(R.string.day1), false));
+                       //add(new BooleanEvaluationItem(context, ConfigurationParams.DAY2, context.getString(R.string.day2), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.DAY3, context.getString(R.string.day3), false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.DAY4, context.getString(R.string.pre_discharge_or_discharge_day), false));
                     }
                 }, SectionEvaluationItem.SectionElementState.OPENED));
 

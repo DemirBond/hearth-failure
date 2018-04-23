@@ -62,8 +62,8 @@ public class SavedEvaluationPresenterImpl extends AbstractPresenter<SavedEvaluat
         RestClientProvider.get().getApi().retrieveSavedEvaluations().enqueue(new Callback<SavedEvaluationSummaryResponse>() {
             @Override
             public void onResponse(Call<SavedEvaluationSummaryResponse> call, Response<SavedEvaluationSummaryResponse> response) {
-
                 progressDialog.dismiss();
+
                 if(response.isSuccessful()) {
                     SavedEvaluationSummaryResponse savedEvaluationSummaryResponse = response.body();
                     if(savedEvaluationSummaryResponse.isSuccessful()) {
