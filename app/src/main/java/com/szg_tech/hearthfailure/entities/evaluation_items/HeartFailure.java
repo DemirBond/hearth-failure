@@ -51,8 +51,8 @@ public class HeartFailure extends SectionEvaluationItem {
 
                         //add(new BooleanEvaluationItem(context, ConfigurationParams.CHRONIC_HF, "Chronic known HF", false));
                         add(new NumericalEvaluationItem(context, ConfigurationParams.HF_DIAGNOSIS_DURATION_WEEK, context.getString(R.string.duration_week), context.getString(R.string.value), 0, 999, false, true));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.ONE_OR_MORE_HF_ADMISSION, "One or more HF admissions in 12 months", false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.TWO_UNSCHEDULED_VISITS, "Two unscheduled ED or clinic visits in 12 months", false));
+                        //add(new BooleanEvaluationItem(context, ConfigurationParams.ONE_OR_MORE_HF_ADMISSION, "One or more HF admissions in 12 months", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.TWO_UNSCHEDULED_VISITS, "Previous HF hospitalization", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.CHEST_PAIN, context.getString(R.string.chest_pain), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.WEIGHT_GAIN, "Weight Gain", false));
                         add(new SectionCheckboxEvaluationItem(context, ConfigurationParams.DYSPNEA_ON_EXERTION, "Dyspnea on exertion", false, new ArrayList<EvaluationItem>() {
@@ -138,6 +138,7 @@ public class HeartFailure extends SectionEvaluationItem {
 
 
 
+
                     }
                 }, SectionEvaluationItem.SectionElementState.OPENED));
 
@@ -149,13 +150,16 @@ public class HeartFailure extends SectionEvaluationItem {
                         add(new NumericalEvaluationItem(context, ConfigurationParams.RASAT, "RA O2 SAT","Value", 50, 100, false, true));
                         add(new NumericalEvaluationItem(context, ConfigurationParams.VO2SAT, context.getString(R.string.cv_svo2_sat), context.getString(R.string.value), 30, 100, false, true));
 
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.HJR, context.getString(R.string.hepatojuluar_reflux), false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.HEPATO, "Neck veins not sssesable", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.JUGULAR_VENOUS_DISTENTION, context.getString(R.string.jugular_venous_distention), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.EDEMA, context.getString(R.string.edema_ascites), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.LEFT_SIDED_S3, context.getString(R.string.left_sided_gallop), false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.EDEMA, "Edema", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.LEFT_SIDED_S3, "Left sided S3 gallop", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.LEFT_SIDED_S4, "Left sided S4 gallop", false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.NEW_RALES, context.getString(R.string.new_rales), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.PULMONARY_EDEMA, context.getString(R.string.pulmonary_edema), false));
-                        add(new BooleanEvaluationItem(context, ConfigurationParams.CYANOSIS, context.getString(R.string.low_urine_output), false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.HJR, "Hepatojugular reflux", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.ASCITES, "Ascites", false));
+                        add(new BooleanEvaluationItem(context, ConfigurationParams.LOW_URINE, context.getString(R.string.low_urine_output), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.ANY_CNS_SYMPTOMS, context.getString(R.string.any_cns_symptoms), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.COLD_CLAMMY_EXTERMITIES, context.getString(R.string.cold_clammy_extremities), false));
                         add(new BooleanEvaluationItem(context, ConfigurationParams.CYANOSIS, context.getString(R.string.cyanosis), false));

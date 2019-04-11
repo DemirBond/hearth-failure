@@ -22,7 +22,7 @@ public class ConfigurationParams {
     public static final String WAIST_CIRC = "txtwaist";
     public static final String AA = "chkAsianCode";
     public static final String PREGNANCY = "chkpreg";
-    public static final String RASAT = "txtO2sat";
+    public static final String RASAT = "txtO2Sat";
     public static final String SYMPTOMS = "secsymptoms";
     public static final String DYSPNEA = "secdyspnea";
 
@@ -96,8 +96,8 @@ public class ConfigurationParams {
     public static final String S_P_BiV_PPM = "chkCRTI";
     public static final String S_P_PPM_RV_LEAD_ONLY = "chkPPM";
     public static final String NEW_ON_SET_INITIAL_EVALUATION = "chknewHF";
-    public static final String CHRONIC_HF = "chkchronic";
-    public static final String ONE_OR_MORE_HF_ADMISSION = "chkHFPLVF";
+    public static final String CHRONIC_HF = "chkHFPLVF";
+    //public static final String ONE_OR_MORE_HF_ADMISSION = "chkHFPLVF";
     public static final String TWO_UNSCHEDULED_VISITS = "chkfoutpt";
     public static final String CHEST_PAIN = "chkTA";
 
@@ -235,10 +235,12 @@ public class ConfigurationParams {
     public static final String DIMINISHED_BREATH_SOUNDS = "chkbreath";
     public static final String ABDOMINAL_TENDERNESS = "chkabdominal";
     public static final String HJR = "chkhepato";
+    public static final String HEPATO = "chkHJR";
     public static final String ASCITES = "chkascites";
     public static final String ANY_CNS_SYMPTOMS = "chkAMS";
     public static final String COLD_CLAMMY_EXTERMITIES = "chkshock";
     public static final String CYANOSIS = "chkcyanosis";
+    public static final String LOW_URINE = "chklowurine";
     public static final String EDEMA = "chkedema";
     public static final String DIFFERENCE_IN_SBP = "txtDiffInSBP";
     public static final String CURRENT_THERAPIES = "seccurrent_therapies";
